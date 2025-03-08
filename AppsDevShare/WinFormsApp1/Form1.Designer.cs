@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
             BBillings = new Button();
             BQrCode = new Button();
@@ -63,7 +64,7 @@
             panel1.Controls.Add(BLogout);
             panel1.Location = new Point(0, 35);
             panel1.Name = "panel1";
-            panel1.Size = new Size(215, 793);
+            panel1.Size = new Size(223, 793);
             panel1.TabIndex = 0;
             // 
             // BBillings
@@ -138,6 +139,7 @@
             // pictureBox2
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(17, 15);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(52, 47);
@@ -158,10 +160,11 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(214, 152);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(221, 135);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(847, 619);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.Size = new Size(840, 636);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -181,6 +184,7 @@
             // pictureBox3
             // 
             pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(3, -2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(42, 30);
@@ -201,6 +205,7 @@
             // 
             // BExit
             // 
+            BExit.BackgroundImage = (Image)resources.GetObject("BExit.BackgroundImage");
             BExit.BackgroundImageLayout = ImageLayout.Zoom;
             BExit.FlatAppearance.BorderSize = 0;
             BExit.FlatStyle = FlatStyle.Flat;
@@ -220,8 +225,8 @@
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1061, 754);
             Controls.Add(panel2);
-            Controls.Add(pictureBox1);
             Controls.Add(panel1);
+            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             HelpButton = true;
             Name = "Form1";
