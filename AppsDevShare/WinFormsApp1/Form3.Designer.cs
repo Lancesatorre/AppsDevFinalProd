@@ -37,15 +37,10 @@
             Company = new Label();
             BExit = new Button();
             pictureBox1 = new PictureBox();
-<<<<<<< HEAD
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-=======
             button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
->>>>>>> 166ed385ff4b54c34477f72c5bd99c131194aa7f
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -141,18 +136,15 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click_1;
             // 
-<<<<<<< HEAD
-=======
             // button1
             // 
-            button1.Location = new Point(196, 132);
+            button1.Location = new Point(94, 170);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(532, 114);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
->>>>>>> 166ed385ff4b54c34477f72c5bd99c131194aa7f
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -166,10 +158,7 @@
             Text = "Form3";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-<<<<<<< HEAD
-=======
             panel3.ResumeLayout(false);
->>>>>>> 166ed385ff4b54c34477f72c5bd99c131194aa7f
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
