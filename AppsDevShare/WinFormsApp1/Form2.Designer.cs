@@ -48,6 +48,7 @@
             pictureBox3 = new PictureBox();
             Company = new Label();
             BExit = new Button();
+            label6 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             LoginPanel.SuspendLayout();
@@ -59,6 +60,7 @@
             // 
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(label6);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label3);
@@ -139,15 +141,20 @@
             // 
             // BEye
             // 
-            BEye.BackColor = Color.White;
-            BEye.BackgroundImage = (Image)resources.GetObject("BEye.BackgroundImage");
+            BEye.BackColor = Color.Transparent;
+            BEye.BackgroundImage = Properties.Resources.eyeClose;
             BEye.BackgroundImageLayout = ImageLayout.Stretch;
+            BEye.CausesValidation = false;
             BEye.FlatAppearance.BorderSize = 0;
+            BEye.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            BEye.FlatAppearance.MouseOverBackColor = Color.Transparent;
             BEye.FlatStyle = FlatStyle.Flat;
-            BEye.Location = new Point(364, 273);
+            BEye.ForeColor = Color.Transparent;
+            BEye.Location = new Point(364, 272);
             BEye.Name = "BEye";
             BEye.Size = new Size(23, 19);
-            BEye.TabIndex = 14;
+            BEye.TabIndex = 0;
+            BEye.TabStop = false;
             BEye.UseVisualStyleBackColor = false;
             BEye.MouseClick += BEye_MouseClick_1;
             // 
@@ -291,8 +298,22 @@
             BExit.Name = "BExit";
             BExit.Size = new Size(20, 25);
             BExit.TabIndex = 0;
-            BExit.UseVisualStyleBackColor = false;
+            BExit.UseVisualStyleBackColor = true;
             BExit.MouseClick += BExit_MouseClick;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Verdana", 19F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.FromArgb(4, 30, 70);
+            label6.ImageAlign = ContentAlignment.BottomRight;
+            label6.Location = new Point(569, 267);
+            label6.Name = "label6";
+            label6.Size = new Size(464, 256);
+            label6.TabIndex = 16;
+            label6.Text = resources.GetString("label6.Text");
+            label6.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Form2
             // 
@@ -336,5 +357,6 @@
         private Label label5;
         private Button BEye;
         private TextBox TBPassword;
+        private Label label6;
     }
 }

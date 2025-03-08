@@ -15,6 +15,7 @@ namespace WinFormsApp1
     public partial class Form2 : Form
     {
         bool checker = false;
+
         public Form2()
         {
             InitializeComponent();
@@ -41,7 +42,7 @@ namespace WinFormsApp1
             {
                 TBPassword.UseSystemPasswordChar = false;
                 checker = true;
-                BEye.BackgroundImage = Image.FromFile(@"C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\Images\eyeOpen.png");
+                BEye.BackgroundImage = Properties.Resources.eyeOpen;
             }
             else
             {
@@ -49,7 +50,7 @@ namespace WinFormsApp1
                 {
                     TBPassword.UseSystemPasswordChar = true;
                     checker = false;
-                    BEye.BackgroundImage = Image.FromFile(@"C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\Images\eyeClose.png");
+                    BEye.BackgroundImage = Properties.Resources.eyeClose;
                 }
             }
             
