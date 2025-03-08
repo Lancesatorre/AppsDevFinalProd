@@ -30,18 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             panel1 = new Panel();
+            pictureBox2 = new PictureBox();
             panel3 = new Panel();
             panel2 = new Panel();
             pictureBox3 = new PictureBox();
             Company = new Label();
             BExit = new Button();
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
+            button1 = new Button();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel3.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -56,9 +58,21 @@
             panel1.Size = new Size(1052, 732);
             panel1.TabIndex = 5;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(489, 41);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(71, 59);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 11;
+            pictureBox2.TabStop = false;
+            // 
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(58, 94, 116);
+            panel3.Controls.Add(button1);
             panel3.Location = new Point(67, 212);
             panel3.Name = "panel3";
             panel3.Size = new Size(904, 445);
@@ -122,16 +136,14 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click_1;
             // 
-            // pictureBox2
+            // button1
             // 
-            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(489, 41);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(71, 59);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 11;
-            pictureBox2.TabStop = false;
+            button1.Location = new Point(196, 132);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 0;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
@@ -145,11 +157,12 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form3";
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel3.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -163,5 +176,6 @@
         private Button BExit;
         private Panel panel3;
         private PictureBox pictureBox2;
+        private Button button1;
     }
 }
