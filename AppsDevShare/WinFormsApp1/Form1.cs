@@ -15,10 +15,10 @@ namespace WinFormsApp1
         private void button6_Click(object sender, EventArgs e)
         {
 
-            //this.Visible = false;
-            //Form2 form2 = new Form2();
-            //form2.Show();
-            Application.Exit();
+            this.Visible = false;
+            Form2 form2 = new Form2();
+            form2.Show();
+         
 
         }
 
