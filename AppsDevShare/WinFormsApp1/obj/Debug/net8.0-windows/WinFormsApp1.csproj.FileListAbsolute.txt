@@ -92,3 +92,4 @@ C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\
 C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
 >>>>>>> 7e8d1d792f01633c1737363c5b309a0cecd9557d
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form3.resources
