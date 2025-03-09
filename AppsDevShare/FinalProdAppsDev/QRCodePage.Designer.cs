@@ -30,13 +30,15 @@
         {
             button1 = new Button();
             button2 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(42, 26);
+            button1.Location = new Point(35, 24);
             button1.Name = "button1";
-            button1.Size = new Size(343, 377);
+            button1.Size = new Size(204, 97);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -45,20 +47,31 @@
             // 
             button2.Location = new Point(437, 40);
             button2.Name = "button2";
-            button2.Size = new Size(264, 306);
+            button2.Size = new Size(76, 94);
             button2.TabIndex = 1;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.eyeClose;
+            pictureBox1.Location = new Point(151, 94);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(295, 269);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
             // QRCodePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "QRCodePage";
             Text = "QRCodePage";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -66,5 +79,6 @@
 
         private Button button1;
         private Button button2;
+        private PictureBox pictureBox1;
     }
 }
