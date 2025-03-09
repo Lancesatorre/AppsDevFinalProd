@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:patientrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\admin\\onedrive\\desktop\\hospital-appsdevfinal\\appsdevshare\\finalprodappsdev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\qrcodepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:qrcodepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\admin\\onedrive\\desktop\\hospital-appsdevfinal\\appsdevshare\\finalprodappsdev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\appointmentsforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -61,12 +61,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -81,14 +77,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "QRCodePage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\QRCodePage.cs",
               "RelativeDocumentMoniker": "QRCodePage.cs",
               "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\QRCodePage.cs [Design]",
               "RelativeToolTip": "QRCodePage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T15:40:39.949Z"
+              "WhenOpened": "2025-03-09T15:40:39.949Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -140,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",

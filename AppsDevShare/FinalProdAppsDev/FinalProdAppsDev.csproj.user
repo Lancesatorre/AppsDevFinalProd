@@ -5,6 +5,9 @@
     <Compile Update="AppointmentsForms.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="BillingsForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
