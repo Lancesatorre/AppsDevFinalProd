@@ -7,7 +7,11 @@
     <Compile Update="MenuPatient.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="SignUpPage.cs">
+=======
+    <Compile Update="PatientRecordsForm.cs">
+>>>>>>> origin/satorreBranch
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
