@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace FinalProdAppsDev
 {
     public partial class LoginPage: Form
-    {
+    { 
         bool checker = false;
 
         public LoginPage()
