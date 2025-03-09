@@ -31,6 +31,7 @@
             button1 = new Button();
             button2 = new Button();
             pictureBox1 = new PictureBox();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -55,17 +56,26 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.eyeClose;
-            pictureBox1.Location = new Point(151, 94);
+            pictureBox1.Location = new Point(129, 102);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(295, 269);
+            pictureBox1.Size = new Size(302, 256);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(467, 192);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(240, 23);
+            comboBox1.TabIndex = 3;
             // 
             // QRCodePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(comboBox1);
             Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -80,5 +90,6 @@
         private Button button1;
         private Button button2;
         private PictureBox pictureBox1;
+        private ComboBox comboBox1;
     }
 }
