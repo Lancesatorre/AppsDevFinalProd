@@ -14,6 +14,9 @@
     <Compile Update="PatientRecordsForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="QRCodePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SignUpPage.cs">
       <SubType>Form</SubType>
     </Compile>
