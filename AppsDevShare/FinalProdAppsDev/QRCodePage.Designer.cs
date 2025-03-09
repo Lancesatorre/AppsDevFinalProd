@@ -56,9 +56,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.eyeClose;
-            pictureBox1.Location = new Point(129, 102);
+            pictureBox1.Location = new Point(74, 114);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(302, 256);
+            pictureBox1.Size = new Size(303, 259);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
