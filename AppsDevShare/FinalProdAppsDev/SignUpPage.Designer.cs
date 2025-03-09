@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             button1 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -40,19 +42,32 @@
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.exit;
+            pictureBox1.Location = new Point(142, 242);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(571, 85);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // SignUpPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(button1);
             Name = "SignUpPage";
             Text = "SignUpPage";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button button1;
+        private PictureBox pictureBox1;
     }
 }
