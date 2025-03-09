@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             button1 = new Button();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // button1
@@ -40,11 +41,20 @@
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ActiveCaptionText;
+            panel1.Location = new Point(39, 45);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(284, 295);
+            panel1.TabIndex = 1;
+            // 
             // BillingsForms
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(button1);
             Name = "BillingsForms";
             Text = "BillingsForms";
@@ -54,5 +64,6 @@
         #endregion
 
         private Button button1;
+        private Panel panel1;
     }
 }
