@@ -36,3 +36,5 @@ C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDev
 C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalProdAppsDev.pdb
 C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalProdAppsDev.genruntimeconfig.cache
 C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\FinalProdAppsDev\obj\Debug\net8.0-windows\ref\FinalProdAppsDev.dll
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalProdAppsDev.PatientRecordsForm.resources
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalProdAppsDev.SignUpPage.resources
