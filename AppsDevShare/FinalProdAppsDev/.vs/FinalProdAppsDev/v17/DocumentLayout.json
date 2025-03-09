@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\laroc\\onedrive\\desktop\\appsdev-medsystem\\appsdev-medical system\\appsdevshare\\finalprodappsdev\\patientrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\laroc\\onedrive\\desktop\\appsdev-medsystem\\appsdev-medical system\\appsdevshare\\finalprodappsdev\\billingsforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:billingsforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\patientrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:patientrecordsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\laroc\\onedrive\\desktop\\appsdev-medsystem\\appsdev-medical system\\appsdevshare\\finalprodappsdev\\patientrecordsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:patientrecordsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\laroc\\onedrive\\desktop\\appsdev-medsystem\\appsdev-medical system\\appsdevshare\\finalprodappsdev\\finalprodappsdev.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:finalprodappsdev.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\menupatient.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:menupatient.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\laroc\\onedrive\\desktop\\appsdev-medsystem\\appsdev-medical system\\appsdevshare\\finalprodappsdev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,6 +82,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BillingsForms.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\BillingsForms.cs",
+              "RelativeDocumentMoniker": "BillingsForms.cs",
+              "ToolTip": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\BillingsForms.cs [Design]",
+              "RelativeToolTip": "BillingsForms.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T16:44:55.998Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PatientRecordsForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\PatientRecordsForm.Designer.cs",
+              "RelativeDocumentMoniker": "PatientRecordsForm.Designer.cs",
+              "ToolTip": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\PatientRecordsForm.Designer.cs",
+              "RelativeToolTip": "PatientRecordsForm.Designer.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAEwCAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T16:43:50.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FinalProdAppsDev.csproj",
+              "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\FinalProdAppsDev.csproj",
+              "RelativeDocumentMoniker": "FinalProdAppsDev.csproj",
+              "ToolTip": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\FinalProdAppsDev.csproj",
+              "RelativeToolTip": "FinalProdAppsDev.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-09T16:43:40.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuPatient.resx",
+              "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\MenuPatient.resx",
+              "RelativeDocumentMoniker": "MenuPatient.resx",
+              "ToolTip": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\MenuPatient.resx",
+              "RelativeToolTip": "MenuPatient.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-03-09T16:43:30.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PatientRecordsForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\PatientRecordsForm.cs",
               "RelativeDocumentMoniker": "PatientRecordsForm.cs",
@@ -77,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "QRCodePage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\QRCodePage.cs",
               "RelativeDocumentMoniker": "QRCodePage.cs",
@@ -88,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -100,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "SignUpPage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\SignUpPage.cs",
               "RelativeDocumentMoniker": "SignUpPage.cs",
@@ -111,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "LoginPage.Designer.cs",
               "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\LoginPage.Designer.cs",
               "RelativeDocumentMoniker": "LoginPage.Designer.cs",
@@ -123,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "LoginPage.cs",
               "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\LoginPage.cs",
               "RelativeDocumentMoniker": "LoginPage.cs",
@@ -136,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -148,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "AppointmentsForms.cs [Design]",
               "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\AppointmentsForms.cs",
               "RelativeDocumentMoniker": "AppointmentsForms.cs",
@@ -159,18 +223,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "LoginPage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\LoginPage.cs",
               "RelativeDocumentMoniker": "LoginPage.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\LoginPage.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\LoginPage.cs [Design]",
+              "ToolTip": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\LoginPage.cs [Design]",
+              "RelativeToolTip": "LoginPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T14:05:42.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "PatientRecordsForm.cs",
               "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\PatientRecordsForm.cs",
               "RelativeDocumentMoniker": "PatientRecordsForm.cs",
@@ -182,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "MenuPatient.Designer.cs",
               "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\MenuPatient.Designer.cs",
               "RelativeDocumentMoniker": "MenuPatient.Designer.cs",
@@ -194,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "MenuPatient.cs",
               "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\MenuPatient.cs",
               "RelativeDocumentMoniker": "MenuPatient.cs",
@@ -207,12 +271,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "MenuPatient.cs [Design]",
               "DocumentMoniker": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\MenuPatient.cs",
               "RelativeDocumentMoniker": "MenuPatient.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\MenuPatient.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\MenuPatient.cs [Design]",
+              "ToolTip": "C:\\Users\\laroc\\OneDrive\\Desktop\\APPSDEV-medSystem\\AppsDev-Medical System\\AppsDevShare\\FinalProdAppsDev\\MenuPatient.cs [Design]",
+              "RelativeToolTip": "MenuPatient.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T14:02:01.068Z"
             }
