@@ -1,6 +1,6 @@
 ﻿namespace FinalProdAppsDev
 {
-    partial class PatientRecordsForm
+    partial class sorryLnce
     {
         /// <summary>
         /// Required designer variable.
@@ -29,64 +29,42 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            dateTimePicker1 = new DateTimePicker();
-            panel1 = new Panel();
             button2 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(64, 80);
+            button1.Location = new Point(42, 33);
             button1.Name = "button1";
-            button1.Size = new Size(120, 22);
+            button1.Size = new Size(220, 372);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(12, 158);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(371, 23);
-            dateTimePicker1.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.SaddleBrown;
-            panel1.Location = new Point(118, 268);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(200, 100);
-            panel1.TabIndex = 2;
-            // 
             // button2
             // 
-            button2.Location = new Point(414, 80);
+            button2.Location = new Point(367, 33);
             button2.Name = "button2";
-            button2.Size = new Size(361, 261);
-            button2.TabIndex = 2;
+            button2.Size = new Size(365, 372);
+            button2.TabIndex = 1;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
             // 
-            // PatientRecordsForm
+            // sorryLnce
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(panel1);
             Controls.Add(button2);
-            Controls.Add(dateTimePicker1);
             Controls.Add(button1);
-            Name = "PatientRecordsForm";
-            Text = "PatientRecordsForm";
+            Name = "sorryLnce";
+            Text = "sorryLnce";
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button button1;
-        private DateTimePicker dateTimePicker1;
-        private Panel panel1;
-
         private Button button2;
     }
 }
