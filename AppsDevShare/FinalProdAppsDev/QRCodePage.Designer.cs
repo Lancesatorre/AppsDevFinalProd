@@ -30,6 +30,8 @@
         {
             button1 = new Button();
             button2 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -50,15 +52,26 @@
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Background;
+            pictureBox1.Location = new Point(438, 353);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(335, 81);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
             // QRCodePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "QRCodePage";
             Text = "QRCodePage";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -66,5 +79,6 @@
 
         private Button button1;
         private Button button2;
+        private PictureBox pictureBox1;
     }
 }
