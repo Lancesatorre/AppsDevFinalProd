@@ -30,6 +30,7 @@
         {
             button1 = new Button();
             dateTimePicker1 = new DateTimePicker();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -48,11 +49,21 @@
             dateTimePicker1.Size = new Size(371, 23);
             dateTimePicker1.TabIndex = 1;
             // 
+            // button2
+            // 
+            button2.Location = new Point(380, 83);
+            button2.Name = "button2";
+            button2.Size = new Size(361, 261);
+            button2.TabIndex = 2;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // PatientRecordsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(dateTimePicker1);
             Controls.Add(button1);
             Name = "PatientRecordsForm";
@@ -64,5 +75,6 @@
 
         private Button button1;
         private DateTimePicker dateTimePicker1;
+        private Button button2;
     }
 }
