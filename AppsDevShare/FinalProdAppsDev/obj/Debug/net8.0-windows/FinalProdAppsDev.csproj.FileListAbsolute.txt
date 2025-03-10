@@ -45,3 +45,20 @@ C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdApps
 C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalProdAppsDev.AppointmentsForms.resources
 C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalProdAppsDev.BillingsForms.resources
 C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalProdAppsDev.QRCodePage.resources
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalProdAppsDev.BillingsForms.resources
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalProdAppsDev.sorryLnce.resources
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\QRCoder.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\SiticoneNetCoreUI.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\System.CodeDom.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\System.Composition.AttributedModel.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\System.Composition.Convention.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\System.Composition.Hosting.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\System.Composition.Runtime.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\System.Composition.TypedParts.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalProdAppsDev.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalPro.04920DBE.Up2Date

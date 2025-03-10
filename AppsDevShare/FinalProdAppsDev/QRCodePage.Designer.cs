@@ -31,8 +31,14 @@
             button1 = new Button();
             button2 = new Button();
             pictureBox1 = new PictureBox();
+
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+
             comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+
             SuspendLayout();
             // 
             // button1
@@ -55,6 +61,23 @@
             // 
             // pictureBox1
             // 
+
+            pictureBox1.Image = Properties.Resources.Background;
+            pictureBox1.Location = new Point(644, 353);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(129, 81);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.Background;
+            pictureBox2.Location = new Point(499, 352);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(129, 81);
+            pictureBox2.TabIndex = 3;
+            pictureBox2.TabStop = false;
+
             pictureBox1.Image = Properties.Resources.eyeClose;
             pictureBox1.Location = new Point(74, 114);
             pictureBox1.Name = "pictureBox1";
@@ -69,19 +92,27 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(240, 23);
             comboBox1.TabIndex = 3;
+
             // 
             // QRCodePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+
+            Controls.Add(pictureBox2);
+
             Controls.Add(comboBox1);
+
             Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "QRCodePage";
             Text = "QRCodePage";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+
             ResumeLayout(false);
         }
 
@@ -90,6 +121,10 @@
         private Button button1;
         private Button button2;
         private PictureBox pictureBox1;
+
+        private PictureBox pictureBox2;
+
         private ComboBox comboBox1;
+
     }
 }

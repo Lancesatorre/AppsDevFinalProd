@@ -10,8 +10,8 @@ using System.Windows.Forms;
 
 namespace FinalProdAppsDev
 {
-    public partial class LoginPage: Form
-    { 
+    public partial class LoginPage : Form
+    {
         bool checker = false;
 
         public LoginPage()
@@ -51,6 +51,11 @@ namespace FinalProdAppsDev
                     BEye.BackgroundImage = Properties.Resources.eyeClose;
                 }
             }
+
+        }
+
+        private void TBUsername_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

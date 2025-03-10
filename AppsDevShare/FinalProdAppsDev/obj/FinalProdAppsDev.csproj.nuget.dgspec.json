@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Siticone.NetCore.UI": {
+              "target": "Package",
+              "version": "[2025.2.14, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
