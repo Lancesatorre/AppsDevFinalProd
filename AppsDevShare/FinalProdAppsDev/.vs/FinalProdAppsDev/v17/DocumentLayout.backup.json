@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\admin\\onedrive\\desktop\\hospital-appsdevfinal\\appsdevshare\\finalprodappsdev\\menupatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:menupatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\admin\\onedrive\\desktop\\hospital-appsdevfinal\\appsdevshare\\finalprodappsdev\\signuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:signuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\admin\\onedrive\\desktop\\hospital-appsdevfinal\\appsdevshare\\finalprodappsdev\\menupatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:menupatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\admin\\onedrive\\desktop\\hospital-appsdevfinal\\appsdevshare\\finalprodappsdev\\menupatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:menupatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\admin\\onedrive\\desktop\\hospital-appsdevfinal\\appsdevshare\\finalprodappsdev\\menupatient.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:menupatient.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\admin\\onedrive\\desktop\\hospital-appsdevfinal\\appsdevshare\\finalprodappsdev\\loginpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:loginpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\admin\\onedrive\\desktop\\hospital-appsdevfinal\\appsdevshare\\finalprodappsdev\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\admin\\onedrive\\desktop\\hospital-appsdevfinal\\appsdevshare\\finalprodappsdev\\loginpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:loginpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|c:\\users\\admin\\onedrive\\desktop\\hospital-appsdevfinal\\appsdevshare\\finalprodappsdev\\menupatient.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:menupatient.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9198D72F-8714-43DA-886A-BEB18B249938}|FinalProdAppsDev.csproj|solutionrelative:loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +38,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "SignUpPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\SignUpPage.cs",
+              "RelativeDocumentMoniker": "SignUpPage.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\SignUpPage.cs [Design]",
+              "RelativeToolTip": "SignUpPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T16:09:13.972Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "LoginPage.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\LoginPage.Designer.cs",
               "RelativeDocumentMoniker": "LoginPage.Designer.cs",
@@ -46,8 +62,7 @@
               "RelativeToolTip": "LoginPage.Designer.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAswEIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T12:59:23.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T15:50:06.792Z"
             },
             {
               "$type": "Document",
@@ -59,12 +74,12 @@
               "RelativeToolTip": "LoginPage.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAvwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T12:46:58.612Z",
+              "WhenOpened": "2025-03-10T15:50:06.94Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MenuPatient.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\MenuPatient.Designer.cs",
               "RelativeDocumentMoniker": "MenuPatient.Designer.cs",
@@ -72,7 +87,7 @@
               "RelativeToolTip": "MenuPatient.Designer.cs",
               "ViewState": "AgIAAOgCAAAAAAAAAAAAAOgCAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T12:16:46.112Z",
+              "WhenOpened": "2025-03-10T15:50:06.941Z",
               "EditorCaption": ""
             },
             {
@@ -85,31 +100,31 @@
               "RelativeToolTip": "MenuPatient.cs",
               "ViewState": "AgIAABMAAAAAAAAAAIAwwIwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T12:13:56.369Z",
+              "WhenOpened": "2025-03-10T15:50:06.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MenuPatient.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\MenuPatient.cs",
               "RelativeDocumentMoniker": "MenuPatient.cs",
               "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\MenuPatient.cs [Design]",
               "RelativeToolTip": "MenuPatient.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T12:11:29.084Z",
+              "WhenOpened": "2025-03-10T15:50:08.171Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "LoginPage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\LoginPage.cs",
               "RelativeDocumentMoniker": "LoginPage.cs",
               "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\AppsDevShare\\FinalProdAppsDev\\LoginPage.cs [Design]",
               "RelativeToolTip": "LoginPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T14:05:42.917Z",
+              "WhenOpened": "2025-03-10T15:50:08.202Z",
               "EditorCaption": " [Design]"
             }
           ]

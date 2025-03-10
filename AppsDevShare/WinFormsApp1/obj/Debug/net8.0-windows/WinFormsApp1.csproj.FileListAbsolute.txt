@@ -1,0 +1,95 @@
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\Admin\OneDrive\Desktop\AppsdevJan\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\laroc\OneDrive\Desktop\tnuod na daw\TinuodNani\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+<<<<<<< HEAD
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form2.resources
+C:\Users\laroc\OneDrive\Desktop\APPSDEV-medSystem\AppsDev-Medical System\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form3.resources
+=======
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form2.resources
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+>>>>>>> 7e8d1d792f01633c1737363c5b309a0cecd9557d
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\AppsDevShare\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form3.resources

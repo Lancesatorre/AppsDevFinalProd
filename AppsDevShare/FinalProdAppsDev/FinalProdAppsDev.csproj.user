@@ -2,6 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="AppointmentsForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -21,6 +24,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SignUpPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SignUpPagePart2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="sorryLnce.cs">
