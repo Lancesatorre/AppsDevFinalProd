@@ -41,13 +41,12 @@ namespace FinalProdAppsDev
             activeButton.ButtonBackColor = Color.White;
             activeButton.Font = new Font(activeButton.Font, FontStyle.Bold);
             activeButton.Size = new Size(170, 45);
-            activeButton.BorderColor = Color.Gray;
 
 
             foreach (var btn in otherButtons)
             {
                 btn.Font = new Font(activeButton.Font, FontStyle.Regular);
-                btn.ButtonBackColor = Color.Gray;
+                btn.ButtonBackColor = Color.FromArgb(128, 255, 255, 255);
                 btn.Size = new Size(156, 41);
                 btn.BorderColor = Color.White;
             }
@@ -85,14 +84,13 @@ namespace FinalProdAppsDev
 
         private void BLogout_MouseClick(object sender, MouseEventArgs e)
         {
-
             Panel panel = new Panel
             {
-                Size = new Size(760, 80),
+                Size = new Size(775, 80),
                 BackColor = Color.FromArgb(210, 225, 237),
                 BorderStyle = BorderStyle.None,
-                Margin = new Padding(10, 1, 1, 13)
-                
+                Margin = new Padding(10, 8, 1, 4)
+
 
             };
 
@@ -102,17 +100,17 @@ namespace FinalProdAppsDev
                 Font = new Font("Arial", 12, FontStyle.Bold),
                 ForeColor = Color.Black,
                 AutoSize = true,
-                Location = new Point(25, 30) 
+                Location = new Point(25, 30)
             };
 
-            
+
 
             Button UpdateButton = new Button
             {
                 BackColor = Color.FromArgb(9, 195, 51),
                 Font = new Font("Arial Rounded MT Bold", 8F, FontStyle.Bold),
                 ForeColor = Color.White,
-                Location = new Point(665, 23),
+                Location = new Point(675, 28),
                 Name = "update",
                 Size = new Size(73, 33),
                 TabIndex = 7,
@@ -126,7 +124,7 @@ namespace FinalProdAppsDev
                 BackColor = Color.FromArgb(58, 94, 116),
                 Font = new Font("Arial Rounded MT Bold", 8F, FontStyle.Bold),
                 ForeColor = Color.White,
-                Location = new Point(590, 23),
+                Location = new Point(600, 28),
                 Name = "View",
                 Size = new Size(73, 33),
                 TabIndex = 7,
@@ -141,6 +139,27 @@ namespace FinalProdAppsDev
 
             panelList.Add(panel);
             FlowPanel.Controls.Add(panel);
+
+        }
+
+        private void AddPatientB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddPatientB_MouseClick(object sender, MouseEventArgs e)
+        {
+            FlowPanel.Visible = false;
+            PDetailsPatient.Visible = true;
+        }
+
+        private void BSaveDetails_MouseClick(object sender, MouseEventArgs e)
+        {
+            PDetailsPatient.Visible = false;
+            FlowPanel.Visible = true;
+
+
+          
         }
     }
 }

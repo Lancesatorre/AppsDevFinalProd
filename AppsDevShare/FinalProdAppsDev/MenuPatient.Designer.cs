@@ -40,27 +40,35 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            siticoneCloseButton1 = new SiticoneNetCoreUI.SiticoneCloseButton();
             pictureBox3 = new PictureBox();
             Company = new Label();
-            BExit = new Button();
             TBSearchBar = new SiticoneNetCoreUI.SiticoneTextBox();
             PatientRecordsLabel = new Label();
             FlowPanel = new FlowLayoutPanel();
-            panel3 = new Panel();
             LActions = new Label();
             LmiddleName = new Label();
             LFirstname = new Label();
             LLastname = new Label();
             LNo = new Label();
             MainPatientRecordPanel = new Panel();
+            siticonePanel1 = new SiticoneNetCoreUI.SiticonePanel();
+            pictureBox5 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            AddPatientB = new SiticoneNetCoreUI.SiticoneButton();
+            PDetailsPatient = new SiticoneNetCoreUI.SiticonePanel();
+            BSaveDetails = new SiticoneNetCoreUI.SiticoneButton();
+            label1 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            FlowPanel.SuspendLayout();
-            panel3.SuspendLayout();
             MainPatientRecordPanel.SuspendLayout();
+            siticonePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            PDetailsPatient.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -197,9 +205,9 @@
             BBilling.GradientColor = Color.FromArgb(114, 168, 255);
             BBilling.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             BBilling.HintText = null;
-            BBilling.HoverBackColor = Color.FromArgb(58, 94, 116);
+            BBilling.HoverBackColor = Color.White;
             BBilling.HoverFontStyle = FontStyle.Regular;
-            BBilling.HoverTextColor = Color.White;
+            BBilling.HoverTextColor = Color.Black;
             BBilling.HoverTransitionDuration = 250;
             BBilling.ImageAlign = ContentAlignment.MiddleLeft;
             BBilling.ImagePadding = 5;
@@ -216,7 +224,7 @@
             BBilling.ParticleColor = Color.FromArgb(200, 200, 200);
             BBilling.ParticleCount = 15;
             BBilling.PressAnimationScale = 0.97F;
-            BBilling.PressedBackColor = Color.Teal;
+            BBilling.PressedBackColor = Color.FromArgb(58, 94, 116);
             BBilling.PressedFontStyle = FontStyle.Regular;
             BBilling.PressTransitionDuration = 150;
             BBilling.ReadOnlyTextColor = Color.FromArgb(100, 100, 100);
@@ -275,9 +283,9 @@
             BScanQr.GradientColor = Color.FromArgb(114, 168, 255);
             BScanQr.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             BScanQr.HintText = null;
-            BScanQr.HoverBackColor = Color.FromArgb(58, 94, 116);
+            BScanQr.HoverBackColor = Color.White;
             BScanQr.HoverFontStyle = FontStyle.Regular;
-            BScanQr.HoverTextColor = Color.White;
+            BScanQr.HoverTextColor = Color.Black;
             BScanQr.HoverTransitionDuration = 250;
             BScanQr.ImageAlign = ContentAlignment.MiddleLeft;
             BScanQr.ImagePadding = 5;
@@ -294,7 +302,7 @@
             BScanQr.ParticleColor = Color.FromArgb(200, 200, 200);
             BScanQr.ParticleCount = 15;
             BScanQr.PressAnimationScale = 0.97F;
-            BScanQr.PressedBackColor = Color.Teal;
+            BScanQr.PressedBackColor = Color.FromArgb(58, 94, 116);
             BScanQr.PressedFontStyle = FontStyle.Regular;
             BScanQr.PressTransitionDuration = 150;
             BScanQr.ReadOnlyTextColor = Color.FromArgb(100, 100, 100);
@@ -353,9 +361,9 @@
             BAppointments.GradientColor = Color.FromArgb(114, 168, 255);
             BAppointments.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             BAppointments.HintText = null;
-            BAppointments.HoverBackColor = Color.FromArgb(58, 94, 116);
+            BAppointments.HoverBackColor = Color.White;
             BAppointments.HoverFontStyle = FontStyle.Regular;
-            BAppointments.HoverTextColor = Color.White;
+            BAppointments.HoverTextColor = Color.Black;
             BAppointments.HoverTransitionDuration = 250;
             BAppointments.ImageAlign = ContentAlignment.MiddleLeft;
             BAppointments.ImagePadding = 5;
@@ -372,7 +380,7 @@
             BAppointments.ParticleColor = Color.FromArgb(200, 200, 200);
             BAppointments.ParticleCount = 15;
             BAppointments.PressAnimationScale = 0.97F;
-            BAppointments.PressedBackColor = Color.Teal;
+            BAppointments.PressedBackColor = Color.FromArgb(58, 94, 116);
             BAppointments.PressedFontStyle = FontStyle.Regular;
             BAppointments.PressTransitionDuration = 150;
             BAppointments.ReadOnlyTextColor = Color.FromArgb(100, 100, 100);
@@ -431,9 +439,9 @@
             PatientRecords.GradientColor = Color.FromArgb(114, 168, 255);
             PatientRecords.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             PatientRecords.HintText = null;
-            PatientRecords.HoverBackColor = Color.FromArgb(58, 94, 116);
+            PatientRecords.HoverBackColor = Color.White;
             PatientRecords.HoverFontStyle = FontStyle.Regular;
-            PatientRecords.HoverTextColor = Color.White;
+            PatientRecords.HoverTextColor = Color.Black;
             PatientRecords.HoverTransitionDuration = 250;
             PatientRecords.ImageAlign = ContentAlignment.MiddleLeft;
             PatientRecords.ImagePadding = 5;
@@ -498,7 +506,6 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Image = Properties.Resources.porifle;
             pictureBox2.Location = new Point(18, 15);
             pictureBox2.Margin = new Padding(4, 3, 4, 3);
@@ -523,15 +530,34 @@
             // 
             panel2.BackColor = Color.FromArgb(58, 94, 113);
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(siticoneCloseButton1);
             panel2.Controls.Add(pictureBox3);
             panel2.Controls.Add(Company);
-            panel2.Controls.Add(BExit);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Margin = new Padding(4, 3, 4, 3);
             panel2.Name = "panel2";
             panel2.Size = new Size(1107, 35);
             panel2.TabIndex = 2;
+            // 
+            // siticoneCloseButton1
+            // 
+            siticoneCloseButton1.BackColor = Color.Transparent;
+            siticoneCloseButton1.CountdownFont = new Font("Segoe UI", 9F);
+            siticoneCloseButton1.Cursor = Cursors.Default;
+            siticoneCloseButton1.EnableGlowEffect = true;
+            siticoneCloseButton1.EnableSound = false;
+            siticoneCloseButton1.ForeColor = Color.White;
+            siticoneCloseButton1.GlowColor = Color.Firebrick;
+            siticoneCloseButton1.HoverColor = Color.Red;
+            siticoneCloseButton1.IconColor = Color.White;
+            siticoneCloseButton1.IconSize = 12;
+            siticoneCloseButton1.Location = new Point(1065, -2);
+            siticoneCloseButton1.Name = "siticoneCloseButton1";
+            siticoneCloseButton1.Size = new Size(37, 37);
+            siticoneCloseButton1.TabIndex = 17;
+            siticoneCloseButton1.Text = "siticoneCloseButton1";
+            siticoneCloseButton1.TooltipText = "Close button";
             // 
             // pictureBox3
             // 
@@ -556,20 +582,6 @@
             Company.Size = new Size(82, 20);
             Company.TabIndex = 9;
             Company.Text = "MediTrack";
-            // 
-            // BExit
-            // 
-            BExit.BackgroundImage = Properties.Resources.exit;
-            BExit.BackgroundImageLayout = ImageLayout.Zoom;
-            BExit.FlatAppearance.BorderSize = 0;
-            BExit.FlatStyle = FlatStyle.Flat;
-            BExit.Location = new Point(1074, 5);
-            BExit.Margin = new Padding(4, 3, 4, 3);
-            BExit.Name = "BExit";
-            BExit.Size = new Size(20, 25);
-            BExit.TabIndex = 0;
-            BExit.UseVisualStyleBackColor = true;
-            BExit.Click += button6_Click;
             // 
             // TBSearchBar
             // 
@@ -650,34 +662,20 @@
             FlowPanel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             FlowPanel.AutoScroll = true;
             FlowPanel.BackColor = Color.White;
-            FlowPanel.BorderStyle = BorderStyle.Fixed3D;
-            FlowPanel.Controls.Add(panel3);
-            FlowPanel.Location = new Point(44, 141);
+            FlowPanel.BorderStyle = BorderStyle.FixedSingle;
+            FlowPanel.ForeColor = Color.White;
+            FlowPanel.Location = new Point(43, 193);
             FlowPanel.Margin = new Padding(0);
             FlowPanel.Name = "FlowPanel";
-            FlowPanel.Size = new Size(807, 491);
+            FlowPanel.Size = new Size(807, 437);
             FlowPanel.TabIndex = 6;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.White;
-            panel3.Controls.Add(LActions);
-            panel3.Controls.Add(LmiddleName);
-            panel3.Controls.Add(LFirstname);
-            panel3.Controls.Add(LLastname);
-            panel3.Controls.Add(LNo);
-            panel3.Location = new Point(4, 3);
-            panel3.Margin = new Padding(4, 3, 4, 3);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(709, 49);
-            panel3.TabIndex = 0;
             // 
             // LActions
             // 
             LActions.AutoSize = true;
             LActions.Font = new Font("Verdana", 10F, FontStyle.Bold);
-            LActions.ForeColor = Color.Black;
-            LActions.Location = new Point(640, 16);
+            LActions.ForeColor = Color.White;
+            LActions.Location = new Point(654, 13);
             LActions.Margin = new Padding(4, 0, 4, 0);
             LActions.Name = "LActions";
             LActions.Size = new Size(65, 17);
@@ -688,8 +686,8 @@
             // 
             LmiddleName.AutoSize = true;
             LmiddleName.Font = new Font("Verdana", 10F, FontStyle.Bold);
-            LmiddleName.ForeColor = Color.Black;
-            LmiddleName.Location = new Point(432, 16);
+            LmiddleName.ForeColor = Color.White;
+            LmiddleName.Location = new Point(443, 13);
             LmiddleName.Margin = new Padding(4, 0, 4, 0);
             LmiddleName.Name = "LmiddleName";
             LmiddleName.Size = new Size(106, 17);
@@ -700,8 +698,8 @@
             // 
             LFirstname.AutoSize = true;
             LFirstname.Font = new Font("Verdana", 10F, FontStyle.Bold);
-            LFirstname.ForeColor = Color.Black;
-            LFirstname.Location = new Point(276, 16);
+            LFirstname.ForeColor = Color.White;
+            LFirstname.Location = new Point(288, 13);
             LFirstname.Margin = new Padding(4, 0, 4, 0);
             LFirstname.Name = "LFirstname";
             LFirstname.Size = new Size(90, 17);
@@ -712,8 +710,8 @@
             // 
             LLastname.AutoSize = true;
             LLastname.Font = new Font("Verdana", 10F, FontStyle.Bold);
-            LLastname.ForeColor = Color.Black;
-            LLastname.Location = new Point(132, 16);
+            LLastname.ForeColor = Color.White;
+            LLastname.Location = new Point(137, 13);
             LLastname.Margin = new Padding(4, 0, 4, 0);
             LLastname.Name = "LLastname";
             LLastname.Size = new Size(87, 17);
@@ -724,8 +722,8 @@
             // 
             LNo.AutoSize = true;
             LNo.Font = new Font("Verdana", 10F, FontStyle.Bold);
-            LNo.ForeColor = Color.Black;
-            LNo.Location = new Point(34, 16);
+            LNo.ForeColor = Color.White;
+            LNo.Location = new Point(28, 13);
             LNo.Margin = new Padding(4, 0, 4, 0);
             LNo.Name = "LNo";
             LNo.Size = new Size(34, 17);
@@ -735,14 +733,313 @@
             // MainPatientRecordPanel
             // 
             MainPatientRecordPanel.BackColor = Color.Transparent;
+            MainPatientRecordPanel.Controls.Add(siticonePanel1);
+            MainPatientRecordPanel.Controls.Add(pictureBox5);
+            MainPatientRecordPanel.Controls.Add(pictureBox4);
+            MainPatientRecordPanel.Controls.Add(AddPatientB);
             MainPatientRecordPanel.Controls.Add(TBSearchBar);
             MainPatientRecordPanel.Controls.Add(FlowPanel);
             MainPatientRecordPanel.Controls.Add(PatientRecordsLabel);
+            MainPatientRecordPanel.Controls.Add(PDetailsPatient);
             MainPatientRecordPanel.Controls.Add(pictureBox1);
             MainPatientRecordPanel.Location = new Point(220, 35);
             MainPatientRecordPanel.Name = "MainPatientRecordPanel";
             MainPatientRecordPanel.Size = new Size(886, 651);
             MainPatientRecordPanel.TabIndex = 7;
+            // 
+            // siticonePanel1
+            // 
+            siticonePanel1.AcrylicTintColor = Color.FromArgb(128, 255, 255, 255);
+            siticonePanel1.BackColor = Color.Transparent;
+            siticonePanel1.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            siticonePanel1.BorderDashPattern = null;
+            siticonePanel1.BorderGradientEndColor = Color.Purple;
+            siticonePanel1.BorderGradientStartColor = Color.Blue;
+            siticonePanel1.BorderThickness = 2F;
+            siticonePanel1.Controls.Add(LActions);
+            siticonePanel1.Controls.Add(LNo);
+            siticonePanel1.Controls.Add(LmiddleName);
+            siticonePanel1.Controls.Add(LLastname);
+            siticonePanel1.Controls.Add(LFirstname);
+            siticonePanel1.CornerRadiusBottomLeft = 10F;
+            siticonePanel1.CornerRadiusBottomRight = 10F;
+            siticonePanel1.CornerRadiusTopLeft = 10F;
+            siticonePanel1.CornerRadiusTopRight = 10F;
+            siticonePanel1.EnableAcrylicEffect = false;
+            siticonePanel1.EnableMicaEffect = false;
+            siticonePanel1.EnableRippleEffect = false;
+            siticonePanel1.FillColor = Color.FromArgb(58, 94, 116);
+            siticonePanel1.GradientColors = new Color[]
+    {
+    Color.White,
+    Color.LightGray,
+    Color.Gray
+    };
+            siticonePanel1.GradientPositions = new float[]
+    {
+    0F,
+    0.5F,
+    1F
+    };
+            siticonePanel1.Location = new Point(43, 145);
+            siticonePanel1.Name = "siticonePanel1";
+            siticonePanel1.PatternStyle = System.Drawing.Drawing2D.HatchStyle.Max;
+            siticonePanel1.RippleAlpha = 50;
+            siticonePanel1.RippleAlphaDecrement = 3;
+            siticonePanel1.RippleColor = Color.FromArgb(50, 255, 255, 255);
+            siticonePanel1.RippleMaxSize = 600F;
+            siticonePanel1.RippleSpeed = 15F;
+            siticonePanel1.ShowBorder = true;
+            siticonePanel1.Size = new Size(807, 45);
+            siticonePanel1.TabIndex = 17;
+            siticonePanel1.TabStop = true;
+            siticonePanel1.UseBorderGradient = false;
+            siticonePanel1.UseMultiGradient = false;
+            siticonePanel1.UsePatternTexture = false;
+            siticonePanel1.UseRadialGradient = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox5.Image = Properties.Resources.log;
+            pictureBox5.Location = new Point(803, 0);
+            pictureBox5.Margin = new Padding(4, 3, 4, 3);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(84, 63);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 11;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.White;
+            pictureBox4.BackgroundImage = Properties.Resources.SearchIcon;
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Location = new Point(665, 90);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(28, 25);
+            pictureBox4.TabIndex = 15;
+            pictureBox4.TabStop = false;
+            // 
+            // AddPatientB
+            // 
+            AddPatientB.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard";
+            AddPatientB.AccessibleName = "Add Patient";
+            AddPatientB.AutoSizeBasedOnText = false;
+            AddPatientB.BackColor = Color.Transparent;
+            AddPatientB.BadgeBackColor = Color.Red;
+            AddPatientB.BadgeFont = new Font("Segoe UI", 8F, FontStyle.Bold);
+            AddPatientB.BadgeValue = 0;
+            AddPatientB.BadgeValueForeColor = Color.Black;
+            AddPatientB.BorderColor = Color.White;
+            AddPatientB.BorderWidth = 2;
+            AddPatientB.ButtonBackColor = Color.FromArgb(58, 94, 116);
+            AddPatientB.ButtonImage = Properties.Resources.AddImage;
+            AddPatientB.CanBeep = true;
+            AddPatientB.CanGlow = false;
+            AddPatientB.CanShake = true;
+            AddPatientB.ContextMenuStripEx = null;
+            AddPatientB.CornerRadiusBottomLeft = 20;
+            AddPatientB.CornerRadiusBottomRight = 20;
+            AddPatientB.CornerRadiusTopLeft = 20;
+            AddPatientB.CornerRadiusTopRight = 20;
+            AddPatientB.Cursor = Cursors.Hand;
+            AddPatientB.CustomCursor = Cursors.Default;
+            AddPatientB.DisabledTextColor = Color.FromArgb(150, 150, 150);
+            AddPatientB.EnableLongPress = false;
+            AddPatientB.EnablePressAnimation = true;
+            AddPatientB.EnableRippleEffect = true;
+            AddPatientB.EnableShadow = false;
+            AddPatientB.EnableTextWrapping = false;
+            AddPatientB.Font = new Font("Verdana", 10F, FontStyle.Bold);
+            AddPatientB.GlowColor = Color.FromArgb(100, 255, 255, 255);
+            AddPatientB.GlowIntensity = 100;
+            AddPatientB.GlowRadius = 20F;
+            AddPatientB.GradientBackground = false;
+            AddPatientB.GradientColor = Color.FromArgb(114, 168, 255);
+            AddPatientB.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            AddPatientB.HintText = null;
+            AddPatientB.HoverBackColor = Color.FromArgb(58, 94, 116);
+            AddPatientB.HoverFontStyle = FontStyle.Regular;
+            AddPatientB.HoverTextColor = Color.White;
+            AddPatientB.HoverTransitionDuration = 250;
+            AddPatientB.ImageAlign = ContentAlignment.MiddleLeft;
+            AddPatientB.ImagePadding = 10;
+            AddPatientB.ImageSize = new Size(20, 20);
+            AddPatientB.IsRadial = false;
+            AddPatientB.IsReadOnly = false;
+            AddPatientB.IsToggleButton = false;
+            AddPatientB.IsToggled = false;
+            AddPatientB.Location = new Point(710, 81);
+            AddPatientB.LongPressDurationMS = 1000;
+            AddPatientB.Margin = new Padding(4, 3, 4, 3);
+            AddPatientB.Name = "AddPatientB";
+            AddPatientB.NormalFontStyle = FontStyle.Regular;
+            AddPatientB.ParticleColor = Color.FromArgb(200, 200, 200);
+            AddPatientB.ParticleCount = 15;
+            AddPatientB.PressAnimationScale = 0.97F;
+            AddPatientB.PressedBackColor = Color.FromArgb(58, 94, 116);
+            AddPatientB.PressedFontStyle = FontStyle.Regular;
+            AddPatientB.PressTransitionDuration = 150;
+            AddPatientB.ReadOnlyTextColor = Color.FromArgb(100, 100, 100);
+            AddPatientB.RippleColor = Color.FromArgb(255, 255, 255);
+            AddPatientB.RippleOpacity = 0.3F;
+            AddPatientB.RippleRadiusMultiplier = 0.6F;
+            AddPatientB.ShadowBlur = 5;
+            AddPatientB.ShadowColor = Color.FromArgb(100, 0, 0, 0);
+            AddPatientB.ShadowOffset = new Point(2, 2);
+            AddPatientB.ShakeDuration = 500;
+            AddPatientB.ShakeIntensity = 5;
+            AddPatientB.Size = new Size(156, 45);
+            AddPatientB.TabIndex = 14;
+            AddPatientB.Text = "Add Patient";
+            AddPatientB.TextAlign = ContentAlignment.MiddleCenter;
+            AddPatientB.TextColor = Color.White;
+            AddPatientB.TooltipText = null;
+            AddPatientB.UseAdvancedRendering = true;
+            AddPatientB.UseParticles = false;
+            AddPatientB.Click += AddPatientB_Click;
+            AddPatientB.MouseClick += AddPatientB_MouseClick;
+            // 
+            // PDetailsPatient
+            // 
+            PDetailsPatient.AcrylicTintColor = Color.FromArgb(128, 255, 255, 255);
+            PDetailsPatient.BackColor = Color.Transparent;
+            PDetailsPatient.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            PDetailsPatient.BorderDashPattern = null;
+            PDetailsPatient.BorderGradientEndColor = Color.Purple;
+            PDetailsPatient.BorderGradientStartColor = Color.Blue;
+            PDetailsPatient.BorderThickness = 2F;
+            PDetailsPatient.Controls.Add(BSaveDetails);
+            PDetailsPatient.Controls.Add(label1);
+            PDetailsPatient.CornerRadiusBottomLeft = 10F;
+            PDetailsPatient.CornerRadiusBottomRight = 10F;
+            PDetailsPatient.CornerRadiusTopLeft = 10F;
+            PDetailsPatient.CornerRadiusTopRight = 10F;
+            PDetailsPatient.EnableAcrylicEffect = false;
+            PDetailsPatient.EnableMicaEffect = false;
+            PDetailsPatient.EnableRippleEffect = false;
+            PDetailsPatient.FillColor = Color.FromArgb(58, 94, 116);
+            PDetailsPatient.GradientColors = new Color[]
+    {
+    Color.White,
+    Color.LightGray,
+    Color.Gray
+    };
+            PDetailsPatient.GradientPositions = new float[]
+    {
+    0F,
+    0.5F,
+    1F
+    };
+            PDetailsPatient.Location = new Point(71, 149);
+            PDetailsPatient.Name = "PDetailsPatient";
+            PDetailsPatient.PatternStyle = System.Drawing.Drawing2D.HatchStyle.Max;
+            PDetailsPatient.RippleAlpha = 50;
+            PDetailsPatient.RippleAlphaDecrement = 3;
+            PDetailsPatient.RippleColor = Color.FromArgb(50, 255, 255, 255);
+            PDetailsPatient.RippleMaxSize = 600F;
+            PDetailsPatient.RippleSpeed = 15F;
+            PDetailsPatient.ShowBorder = true;
+            PDetailsPatient.Size = new Size(756, 469);
+            PDetailsPatient.TabIndex = 16;
+            PDetailsPatient.TabStop = true;
+            PDetailsPatient.UseBorderGradient = false;
+            PDetailsPatient.UseMultiGradient = false;
+            PDetailsPatient.UsePatternTexture = false;
+            PDetailsPatient.UseRadialGradient = false;
+            PDetailsPatient.Visible = false;
+            // 
+            // BSaveDetails
+            // 
+            BSaveDetails.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard";
+            BSaveDetails.AccessibleName = "siticoneButton1";
+            BSaveDetails.AutoSizeBasedOnText = false;
+            BSaveDetails.BackColor = Color.Transparent;
+            BSaveDetails.BadgeBackColor = Color.Red;
+            BSaveDetails.BadgeFont = new Font("Segoe UI", 8F, FontStyle.Bold);
+            BSaveDetails.BadgeValue = 0;
+            BSaveDetails.BadgeValueForeColor = Color.White;
+            BSaveDetails.BorderColor = Color.FromArgb(94, 148, 255);
+            BSaveDetails.BorderWidth = 2;
+            BSaveDetails.ButtonBackColor = Color.FromArgb(94, 148, 255);
+            BSaveDetails.ButtonImage = null;
+            BSaveDetails.CanBeep = true;
+            BSaveDetails.CanGlow = false;
+            BSaveDetails.CanShake = true;
+            BSaveDetails.ContextMenuStripEx = null;
+            BSaveDetails.CornerRadiusBottomLeft = 0;
+            BSaveDetails.CornerRadiusBottomRight = 0;
+            BSaveDetails.CornerRadiusTopLeft = 0;
+            BSaveDetails.CornerRadiusTopRight = 0;
+            BSaveDetails.CustomCursor = Cursors.Default;
+            BSaveDetails.DisabledTextColor = Color.FromArgb(150, 150, 150);
+            BSaveDetails.EnableLongPress = false;
+            BSaveDetails.EnablePressAnimation = true;
+            BSaveDetails.EnableRippleEffect = true;
+            BSaveDetails.EnableShadow = false;
+            BSaveDetails.EnableTextWrapping = false;
+            BSaveDetails.Font = new Font("Segoe UI", 9F);
+            BSaveDetails.GlowColor = Color.FromArgb(100, 255, 255, 255);
+            BSaveDetails.GlowIntensity = 100;
+            BSaveDetails.GlowRadius = 20F;
+            BSaveDetails.GradientBackground = false;
+            BSaveDetails.GradientColor = Color.FromArgb(114, 168, 255);
+            BSaveDetails.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            BSaveDetails.HintText = null;
+            BSaveDetails.HoverBackColor = Color.FromArgb(114, 168, 255);
+            BSaveDetails.HoverFontStyle = FontStyle.Regular;
+            BSaveDetails.HoverTextColor = Color.White;
+            BSaveDetails.HoverTransitionDuration = 250;
+            BSaveDetails.ImageAlign = ContentAlignment.MiddleLeft;
+            BSaveDetails.ImagePadding = 5;
+            BSaveDetails.ImageSize = new Size(16, 16);
+            BSaveDetails.IsRadial = false;
+            BSaveDetails.IsReadOnly = false;
+            BSaveDetails.IsToggleButton = false;
+            BSaveDetails.IsToggled = false;
+            BSaveDetails.Location = new Point(218, 383);
+            BSaveDetails.LongPressDurationMS = 1000;
+            BSaveDetails.Name = "BSaveDetails";
+            BSaveDetails.NormalFontStyle = FontStyle.Regular;
+            BSaveDetails.ParticleColor = Color.FromArgb(200, 200, 200);
+            BSaveDetails.ParticleCount = 15;
+            BSaveDetails.PressAnimationScale = 0.97F;
+            BSaveDetails.PressedBackColor = Color.FromArgb(74, 128, 235);
+            BSaveDetails.PressedFontStyle = FontStyle.Regular;
+            BSaveDetails.PressTransitionDuration = 150;
+            BSaveDetails.ReadOnlyTextColor = Color.FromArgb(100, 100, 100);
+            BSaveDetails.RippleColor = Color.FromArgb(255, 255, 255);
+            BSaveDetails.RippleOpacity = 0.3F;
+            BSaveDetails.RippleRadiusMultiplier = 0.6F;
+            BSaveDetails.ShadowBlur = 5;
+            BSaveDetails.ShadowColor = Color.FromArgb(100, 0, 0, 0);
+            BSaveDetails.ShadowOffset = new Point(2, 2);
+            BSaveDetails.ShakeDuration = 500;
+            BSaveDetails.ShakeIntensity = 5;
+            BSaveDetails.Size = new Size(115, 42);
+            BSaveDetails.TabIndex = 7;
+            BSaveDetails.Text = "siticoneButton1";
+            BSaveDetails.TextAlign = ContentAlignment.MiddleCenter;
+            BSaveDetails.TextColor = Color.White;
+            BSaveDetails.TooltipText = null;
+            BSaveDetails.UseAdvancedRendering = true;
+            BSaveDetails.UseParticles = false;
+            BSaveDetails.MouseClick += BSaveDetails_MouseClick;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Verdana", 10F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(186, 13);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(214, 17);
+            label1.TabIndex = 6;
+            label1.Text = "DETAILS OF THE PATIENT";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // MenuPatient
             // 
@@ -770,11 +1067,14 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            FlowPanel.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             MainPatientRecordPanel.ResumeLayout(false);
             MainPatientRecordPanel.PerformLayout();
+            siticonePanel1.ResumeLayout(false);
+            siticonePanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            PDetailsPatient.ResumeLayout(false);
+            PDetailsPatient.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -787,7 +1087,6 @@
         private Label NameOfNurse;
         private Label LabelOfUser;
         private Panel panel2;
-        private Button BExit;
         private Label Company;
         private PictureBox pictureBox3;
         private SiticoneNetCoreUI.SiticoneButton PatientRecords;
@@ -799,12 +1098,19 @@
         private List<Panel> panelList = new List<Panel>();
         private Label PatientRecordsLabel;
         private FlowLayoutPanel FlowPanel;
-        private Panel panel3;
         private Label LNo;
         private Label LmiddleName;
         private Label LFirstname;
         private Label LLastname;
         private Panel MainPatientRecordPanel;
         private Label LActions;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
+        private SiticoneNetCoreUI.SiticoneButton AddPatientB;
+        private SiticoneNetCoreUI.SiticonePanel PDetailsPatient;
+        private SiticoneNetCoreUI.SiticoneButton BSaveDetails;
+        private Label label1;
+        private SiticoneNetCoreUI.SiticoneCloseButton siticoneCloseButton1;
+        private SiticoneNetCoreUI.SiticonePanel siticonePanel1;
     }
 }

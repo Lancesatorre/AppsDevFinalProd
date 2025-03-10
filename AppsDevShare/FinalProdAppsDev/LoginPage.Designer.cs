@@ -29,17 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
-            panel3 = new Panel();
-            pictureBox3 = new PictureBox();
-            Company = new Label();
-            BExit = new Button();
             BEye = new Button();
             linkSignUp = new LinkLabel();
             label2 = new Label();
             LPassword = new Label();
             TBPassword = new TextBox();
             label1 = new Label();
-            TBUsername = new TextBox();
             LLogin = new Label();
             pictureBox1 = new PictureBox();
             label3 = new Label();
@@ -49,61 +44,18 @@
             panel1 = new Panel();
             siticonePanel1 = new SiticoneNetCoreUI.SiticonePanel();
             BLogin = new SiticoneNetCoreUI.SiticoneButton();
+            TBUsername = new TextBox();
             Description = new Label();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel2 = new Panel();
+            siticoneCloseButton1 = new SiticoneNetCoreUI.SiticoneCloseButton();
+            pictureBox3 = new PictureBox();
+            Company = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             siticonePanel1.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.FromArgb(58, 94, 113);
-            panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Controls.Add(pictureBox3);
-            panel3.Controls.Add(Company);
-            panel3.Controls.Add(BExit);
-            panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(0, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(1109, 36);
-            panel3.TabIndex = 3;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackgroundImage = Properties.Resources.log;
-            pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox3.Location = new Point(3, -2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(42, 30);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 10;
-            pictureBox3.TabStop = false;
-            // 
-            // Company
-            // 
-            Company.AutoSize = true;
-            Company.Font = new Font("Microsoft New Tai Lue", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Company.ForeColor = SystemColors.ButtonHighlight;
-            Company.Location = new Point(51, 6);
-            Company.Name = "Company";
-            Company.Size = new Size(82, 20);
-            Company.TabIndex = 9;
-            Company.Text = "MediTrack";
-            // 
-            // BExit
-            // 
-            BExit.BackgroundImage = Properties.Resources.exit;
-            BExit.BackgroundImageLayout = ImageLayout.Zoom;
-            BExit.FlatAppearance.BorderSize = 0;
-            BExit.FlatStyle = FlatStyle.Flat;
-            BExit.Location = new Point(1074, 6);
-            BExit.Name = "BExit";
-            BExit.Size = new Size(20, 25);
-            BExit.TabIndex = 0;
-            BExit.UseVisualStyleBackColor = true;
-            BExit.MouseClick += BExit_MouseClick;
             // 
             // BEye
             // 
@@ -184,17 +136,6 @@
             label1.TabIndex = 2;
             label1.Text = "Username:";
             // 
-            // TBUsername
-            // 
-            TBUsername.Cursor = Cursors.Hand;
-            TBUsername.Font = new Font("Segoe UI", 19F);
-            TBUsername.Location = new Point(21, 137);
-            TBUsername.Multiline = true;
-            TBUsername.Name = "TBUsername";
-            TBUsername.Size = new Size(372, 44);
-            TBUsername.TabIndex = 1;
-            TBUsername.TextChanged += TBUsername_TextChanged;
-            // 
             // LLogin
             // 
             LLogin.AutoSize = true;
@@ -273,12 +214,12 @@
             // 
             panel1.BackgroundImage = Properties.Resources.Background;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(panel2);
             panel1.Controls.Add(siticonePanel1);
             panel1.Controls.Add(Description);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(panel3);
             panel1.Location = new Point(0, -1);
             panel1.Name = "panel1";
             panel1.Size = new Size(1109, 688);
@@ -418,6 +359,17 @@
             BLogin.UseAdvancedRendering = true;
             BLogin.UseParticles = false;
             // 
+            // TBUsername
+            // 
+            TBUsername.Cursor = Cursors.Hand;
+            TBUsername.Font = new Font("Segoe UI", 19F);
+            TBUsername.Location = new Point(21, 137);
+            TBUsername.Multiline = true;
+            TBUsername.Name = "TBUsername";
+            TBUsername.Size = new Size(372, 36);
+            TBUsername.TabIndex = 1;
+            TBUsername.TextChanged += TBUsername_TextChanged;
+            // 
             // Description
             // 
             Description.AutoSize = true;
@@ -432,6 +384,63 @@
             Description.Text = resources.GetString("Description.Text");
             Description.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(58, 94, 113);
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(siticoneCloseButton1);
+            panel2.Controls.Add(pictureBox3);
+            panel2.Controls.Add(Company);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(4, 3, 4, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1109, 35);
+            panel2.TabIndex = 26;
+            // 
+            // siticoneCloseButton1
+            // 
+            siticoneCloseButton1.BackColor = Color.Transparent;
+            siticoneCloseButton1.CountdownFont = new Font("Segoe UI", 9F);
+            siticoneCloseButton1.Cursor = Cursors.Default;
+            siticoneCloseButton1.EnableGlowEffect = true;
+            siticoneCloseButton1.EnableSound = false;
+            siticoneCloseButton1.ForeColor = Color.White;
+            siticoneCloseButton1.GlowColor = Color.Firebrick;
+            siticoneCloseButton1.HoverColor = Color.Red;
+            siticoneCloseButton1.IconColor = Color.White;
+            siticoneCloseButton1.IconSize = 12;
+            siticoneCloseButton1.Location = new Point(1065, -2);
+            siticoneCloseButton1.Name = "siticoneCloseButton1";
+            siticoneCloseButton1.Size = new Size(37, 37);
+            siticoneCloseButton1.TabIndex = 17;
+            siticoneCloseButton1.Text = "siticoneCloseButton1";
+            siticoneCloseButton1.TooltipText = "Close button";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox3.Image = Properties.Resources.log;
+            pictureBox3.Location = new Point(4, -2);
+            pictureBox3.Margin = new Padding(4, 3, 4, 3);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(42, 30);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 10;
+            pictureBox3.TabStop = false;
+            // 
+            // Company
+            // 
+            Company.AutoSize = true;
+            Company.Font = new Font("Microsoft New Tai Lue", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Company.ForeColor = SystemColors.ButtonHighlight;
+            Company.Location = new Point(51, 6);
+            Company.Margin = new Padding(4, 0, 4, 0);
+            Company.Name = "Company";
+            Company.Size = new Size(82, 20);
+            Company.TabIndex = 9;
+            Company.Text = "MediTrack";
+            // 
             // LoginPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -442,30 +451,24 @@
             Name = "LoginPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             siticonePanel1.ResumeLayout(false);
             siticonePanel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel panel3;
-        private PictureBox pictureBox3;
-        private Label Company;
-        private Button BExit;
         private Button BEye;
         private LinkLabel linkSignUp;
         private Label label2;
         private Label LPassword;
         private TextBox TBPassword;
         private Label label1;
-        private TextBox TBUsername;
         private Label LLogin;
         private PictureBox pictureBox1;
         private Label label3;
@@ -476,5 +479,10 @@
         private Label Description;
         private SiticoneNetCoreUI.SiticonePanel siticonePanel1;
         private SiticoneNetCoreUI.SiticoneButton BLogin;
+        private TextBox TBUsername;
+        private Panel panel2;
+        private SiticoneNetCoreUI.SiticoneCloseButton siticoneCloseButton1;
+        private PictureBox pictureBox3;
+        private Label Company;
     }
 }
