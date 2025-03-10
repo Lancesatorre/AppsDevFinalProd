@@ -49,8 +49,8 @@
             label4 = new Label();
             label6 = new Label();
             panel1 = new Panel();
-            Description = new Label();
             button1 = new Button();
+            Description = new Label();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             LoginPanel.SuspendLayout();
@@ -317,6 +317,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1061, 754);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(394, 75);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 18;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // Description
             // 
@@ -331,15 +341,6 @@
             Description.TabIndex = 17;
             Description.Text = resources.GetString("Description.Text");
             Description.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(394, 75);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 18;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
             // 
             // LoginPage
             // 

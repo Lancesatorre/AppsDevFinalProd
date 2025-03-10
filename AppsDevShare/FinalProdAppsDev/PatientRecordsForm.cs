@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace FinalProdAppsDev
 {
-    public partial class PatientRecordsForm: Form
+    public partial class PatientRecordsForm : Form
     {
         public PatientRecordsForm()
         {
             InitializeComponent();
+        }
+
+        private void PatientRecordsForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

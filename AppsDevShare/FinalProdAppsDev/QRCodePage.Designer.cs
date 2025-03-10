@@ -31,14 +31,10 @@
             button1 = new Button();
             button2 = new Button();
             pictureBox1 = new PictureBox();
-<<<<<<< HEAD
             pictureBox2 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-=======
             comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
->>>>>>> 1b6eb8a1829e64b55432268b51b7b9f91a795f48
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -52,7 +48,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(437, 40);
+            button2.Location = new Point(474, 134);
             button2.Name = "button2";
             button2.Size = new Size(76, 94);
             button2.TabIndex = 1;
@@ -61,11 +57,10 @@
             // 
             // pictureBox1
             // 
-<<<<<<< HEAD
-            pictureBox1.Image = Properties.Resources.Background;
-            pictureBox1.Location = new Point(644, 353);
+            pictureBox1.Image = Properties.Resources.eyeClose;
+            pictureBox1.Location = new Point(111, 208);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(129, 81);
+            pictureBox1.Size = new Size(303, 259);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
@@ -77,43 +72,29 @@
             pictureBox2.Size = new Size(129, 81);
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
-=======
-            pictureBox1.Image = Properties.Resources.eyeClose;
-            pictureBox1.Location = new Point(74, 114);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(303, 259);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(467, 192);
+            comboBox1.Location = new Point(504, 286);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(240, 23);
             comboBox1.TabIndex = 3;
->>>>>>> 1b6eb8a1829e64b55432268b51b7b9f91a795f48
             // 
             // QRCodePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-<<<<<<< HEAD
             Controls.Add(pictureBox2);
-=======
             Controls.Add(comboBox1);
->>>>>>> 1b6eb8a1829e64b55432268b51b7b9f91a795f48
             Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "QRCodePage";
             Text = "QRCodePage";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-=======
->>>>>>> 1b6eb8a1829e64b55432268b51b7b9f91a795f48
             ResumeLayout(false);
         }
 
@@ -122,10 +103,8 @@
         private Button button1;
         private Button button2;
         private PictureBox pictureBox1;
-<<<<<<< HEAD
         private PictureBox pictureBox2;
-=======
+
         private ComboBox comboBox1;
->>>>>>> 1b6eb8a1829e64b55432268b51b7b9f91a795f48
     }
 }
