@@ -58,5 +58,15 @@ namespace FinalProdAppsDev
         {
 
         }
+
+        private void BEye_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TBPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

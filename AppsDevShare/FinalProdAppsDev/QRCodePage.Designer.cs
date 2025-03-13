@@ -28,103 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            pictureBox1 = new PictureBox();
-
-            pictureBox2 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-
-            comboBox1 = new ComboBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QRCodePage));
+            siticonePictureBox1 = new SiticoneNetCoreUI.SiticonePictureBox();
             SuspendLayout();
             // 
-            // button1
+            // siticonePictureBox1
             // 
-            button1.Location = new Point(35, 24);
-            button1.Name = "button1";
-            button1.Size = new Size(204, 97);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(437, 40);
-            button2.Name = "button2";
-            button2.Size = new Size(76, 94);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-
-            pictureBox1.Image = Properties.Resources.Background;
-            pictureBox1.Location = new Point(644, 353);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(129, 81);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.Background;
-            pictureBox2.Location = new Point(499, 352);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(129, 81);
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
-
-            pictureBox1.Image = Properties.Resources.eyeClose;
-            pictureBox1.Location = new Point(74, 114);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(303, 259);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(467, 192);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(240, 23);
-            comboBox1.TabIndex = 3;
-
+            siticonePictureBox1.BackColor = Color.FromArgb(30, 0, 0, 0);
+            siticonePictureBox1.BackgroundImageLayout = ImageLayout.Center;
+            siticonePictureBox1.BorderColor = Color.Black;
+            siticonePictureBox1.BorderWidth = 1;
+            siticonePictureBox1.Brightness = 1F;
+            siticonePictureBox1.Contrast = 1F;
+            siticonePictureBox1.CornerRadius = 0;
+            siticonePictureBox1.DraggingSpeed = 3.15F;
+            siticonePictureBox1.EnableAsyncLoading = false;
+            siticonePictureBox1.EnableCaching = false;
+            siticonePictureBox1.EnableDragDrop = false;
+            siticonePictureBox1.EnableExtendedImageSources = false;
+            siticonePictureBox1.EnableFilters = false;
+            siticonePictureBox1.EnableFlipping = false;
+            siticonePictureBox1.EnableGlow = false;
+            siticonePictureBox1.EnableHighDpiSupport = false;
+            siticonePictureBox1.EnableMouseInteraction = false;
+            siticonePictureBox1.EnablePlaceholder = false;
+            siticonePictureBox1.EnableRotation = false;
+            siticonePictureBox1.EnableShadow = false;
+            siticonePictureBox1.EnableSlideshow = false;
+            siticonePictureBox1.FlipHorizontal = false;
+            siticonePictureBox1.FlipVertical = false;
+            siticonePictureBox1.Grayscale = false;
+            siticonePictureBox1.Image = null;
+            siticonePictureBox1.ImageOpacity = 1F;
+            siticonePictureBox1.Images = (List<Image>)resources.GetObject("siticonePictureBox1.Images");
+            siticonePictureBox1.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+            siticonePictureBox1.IsCircular = false;
+            siticonePictureBox1.Location = new Point(256, 30);
+            siticonePictureBox1.MaintainAspectRatio = true;
+            siticonePictureBox1.Name = "siticonePictureBox1";
+            siticonePictureBox1.PlaceholderImage = null;
+            siticonePictureBox1.RotationAngle = 0F;
+            siticonePictureBox1.Saturation = 1F;
+            siticonePictureBox1.ShowBorder = true;
+            siticonePictureBox1.Size = new Size(457, 393);
+            siticonePictureBox1.SizeMode = SiticoneNetCoreUI.SiticonePictureBoxSizeMode.StretchImage;
+            siticonePictureBox1.TabIndex = 4;
+            siticonePictureBox1.Text = "siticonePictureBox1";
+            siticonePictureBox1.Click += siticonePictureBox1_Click;
             // 
             // QRCodePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-
-            Controls.Add(pictureBox2);
-
-            Controls.Add(comboBox1);
-
-            Controls.Add(pictureBox1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(siticonePictureBox1);
             Name = "QRCodePage";
             Text = "QRCodePage";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-
+            Load += QRCodePage_Load;
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button button1;
-        private Button button2;
-        private PictureBox pictureBox1;
-
-        private PictureBox pictureBox2;
-
-        private ComboBox comboBox1;
-
+        private SiticoneNetCoreUI.SiticonePictureBox siticonePictureBox1;
     }
 }

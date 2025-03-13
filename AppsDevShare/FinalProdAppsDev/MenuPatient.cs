@@ -159,7 +159,18 @@ namespace FinalProdAppsDev
             FlowPanel.Visible = true;
 
 
-          
+
+        }
+
+        private void FlowPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void siticoneCloseButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
         }
     }
 }

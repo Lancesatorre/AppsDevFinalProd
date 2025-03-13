@@ -27,7 +27,6 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
-
         {
             panel1 = new Panel();
             BLogout = new SiticoneNetCoreUI.SiticoneButton();
@@ -558,6 +557,7 @@
             siticoneCloseButton1.TabIndex = 17;
             siticoneCloseButton1.Text = "siticoneCloseButton1";
             siticoneCloseButton1.TooltipText = "Close button";
+            siticoneCloseButton1.Click += siticoneCloseButton1_Click;
             // 
             // pictureBox3
             // 
@@ -669,6 +669,7 @@
             FlowPanel.Name = "FlowPanel";
             FlowPanel.Size = new Size(807, 437);
             FlowPanel.TabIndex = 6;
+            FlowPanel.Paint += FlowPanel_Paint;
             // 
             // LActions
             // 
