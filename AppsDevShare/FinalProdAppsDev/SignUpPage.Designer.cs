@@ -111,7 +111,6 @@
             signUpPanel1.BorderGradientEndColor = Color.Purple;
             signUpPanel1.BorderGradientStartColor = Color.Blue;
             signUpPanel1.BorderThickness = 2F;
-            signUpPanel1.Controls.Add(signUpPanel2);
             signUpPanel1.Controls.Add(siticoneLabel6);
             signUpPanel1.Controls.Add(siticoneLinkedLabel1);
             signUpPanel1.Controls.Add(siticoneLabel3);
@@ -656,7 +655,7 @@
     0.5F,
     1F
     };
-            signUpPanel2.Location = new Point(0, 0);
+            signUpPanel2.Location = new Point(49, 108);
             signUpPanel2.Name = "signUpPanel2";
             signUpPanel2.PatternStyle = System.Drawing.Drawing2D.HatchStyle.Max;
             signUpPanel2.RippleAlpha = 50;
@@ -665,7 +664,7 @@
             signUpPanel2.RippleMaxSize = 600F;
             signUpPanel2.RippleSpeed = 15F;
             signUpPanel2.ShowBorder = false;
-            signUpPanel2.Size = new Size(450, 479);
+            signUpPanel2.Size = new Size(453, 479);
             signUpPanel2.TabIndex = 41;
             signUpPanel2.TabStop = true;
             signUpPanel2.UseBorderGradient = false;
@@ -1401,6 +1400,7 @@
             BackgroundImage = Properties.Resources.Background;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1107, 685);
+            Controls.Add(signUpPanel2);
             Controls.Add(siticonehLineProgress1);
             Controls.Add(panel2);
             Controls.Add(label4);
