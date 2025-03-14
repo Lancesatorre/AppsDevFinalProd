@@ -11,7 +11,7 @@
     <Compile Update="BillingsForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LoginPage.cs">
+    <Compile Update="LoginPageFixed.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MenuPatient.cs">

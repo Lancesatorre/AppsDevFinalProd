@@ -53,6 +53,10 @@
             "Siticone.NetCore.UI": {
               "target": "Package",
               "version": "[2025.2.14, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.10, )"
             }
           },
           "imports": [

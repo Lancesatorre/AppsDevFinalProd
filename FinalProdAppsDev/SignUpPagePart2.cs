@@ -16,5 +16,41 @@ namespace FinalProdAppsDev
         {
             InitializeComponent();
         }
+
+        private void siticonePanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void siticonePhoneNumberBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignUpPagePart2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BExit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BExit_MouseClick(object sender, MouseEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

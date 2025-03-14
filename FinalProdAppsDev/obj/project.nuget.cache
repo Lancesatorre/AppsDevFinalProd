@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "F02zx3Tqzko=",
+  "dgSpecHash": "v7GoTsyZ1ps=",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\OneDrive\\Desktop\\Hospital-AppsDevFinal\\FinalProdAppsDev\\FinalProdAppsDev.csproj",
   "expectedPackageFiles": [
@@ -19,7 +19,8 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.composition.runtime\\6.0.0\\system.composition.runtime.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.composition.typedparts\\6.0.0\\system.composition.typedparts.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\system.management\\9.0.1\\system.management.9.0.1.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\system.management\\9.0.1\\system.management.9.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\zxing.net\\0.16.10\\zxing.net.0.16.10.nupkg.sha512"
   ],
   "logs": []
 }
