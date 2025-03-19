@@ -1,11 +1,14 @@
-﻿using SiticoneNetCoreUI;
+﻿using Krypton.Toolkit;
+using SiticoneNetCoreUI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,10 +22,14 @@ namespace FinalProdAppsDev
         private Point dragCursorPoint;
         private Point dragFormPoint;
         private bool allFilled;
-        string FirstName;
-        string LastName;
-        string MiddleName;
+        string PatientNo, PFirstName, PMiddleName, PLastName;
+        private List<Patient> patientList = new List<Patient>();
+        private Dictionary<string, (Label firstName, Label middleName, Label lastName)> labelDictionary = new Dictionary<string, (Label, Label, Label)>();
+        private Random random = new Random();
+        Label LFirstName;
+        Label LMiddleName;
         Label LLastName;
+        Panel panel;
 
         public MenuPatient()
         {
@@ -32,9 +39,138 @@ namespace FinalProdAppsDev
             panel2.MouseMove += Panel_MouseMove;
             panel2.MouseUp += Panel_MouseUp;
 
+        }
 
+        // SET PLACE HOLDER SA ALL TEXT BOX SA REGISTER PANEL
+        private void SetPlaceholders(params (KryptonTextBox textBox, string placeholder)[] textBoxes)
+        {
+            foreach (var (textBox, placeholder) in textBoxes)
+            {
+                textBox.Text = placeholder;
+                textBox.StateCommon.Content.Color1 = Color.Gray; // Placeholder color
+
+                textBox.Enter += (s, e) =>
+                {
+                    if (textBox.Text == placeholder)
+                    {
+                        textBox.Text = "";
+                        textBox.StateCommon.Content.Color1 = Color.Black; // Normal text color
+                    }
+                };
+
+                textBox.Leave += (s, e) =>
+                {
+                    if (string.IsNullOrWhiteSpace(textBox.Text))
+                    {
+                        textBox.Text = placeholder;
+                        textBox.StateCommon.Content.Color1 = Color.Gray;
+                    }
+                };
+            }
+        }
+
+        // KANI GAMIT NIS SAVE BUTTON SA REGISTER PANEL, MAO NI MO CHECK IF NAA BAY INPUT OR WALA
+        private bool TextBoxInputChecker(params (KryptonTextBox textBox, string placeholder)[] textBoxes)
+        {
+            foreach (var (textBox, placeholder) in textBoxes)
+            {
+                if (string.IsNullOrWhiteSpace(textBox.Text) || textBox.Text == placeholder)
+                {
+                    return false; // If any textbox is empty or still has placeholder, return false
+                }
+            }
+            return true; // All inputs are valid
+        }
+
+        // THIS FUNCTION IS PARA ENABLE AND VISIBLE SA BUTTON TAGA PISLIT SA VIEW DETAILS PANEL, REGISTER PANEL, UPDATEPANEL
+        private void EnabledButtons(bool isDetailsOpen, bool isViewDetailsPatient)
+        {
+            if (isViewDetailsPatient)
+            {
+                if (isDetailsOpen)
+                {
+                    FlowPanel.Visible = false;
+                    Header.Visible = false;
+                    KTBSearch.Enabled = false;
+                    KBAddPatient.Enabled = false;
+
+
+                }
+                else
+                {
+                    FlowPanel.Visible = true;
+                    Header.Visible = true;
+                    KTBSearch.Enabled = true;
+                    KBAddPatient.Enabled = true;
+
+                }
+            }
+            else
+            {
+                if (isDetailsOpen)
+                {
+                    KPDetailsPatient.Visible = false;
+                    FlowPanel.Visible = true;
+                    Header.Visible = true;
+                    KTBSearch.Enabled = true;
+                    KBAddPatient.Enabled = true;
+                    KBAddPatient.Enabled = true;
+                }
+                else
+                {
+                    FlowPanel.Visible = false;
+                    Header.Visible = false;
+                    KTBSearch.Enabled = false;
+                    KBAddPatient.Enabled = false;
+                    KPDetailsPatient.Visible = true;
+                }
+            }
+        }
+
+        //THIS IS FOR DISPLAYING THE ALL INFO DETAILS OF PATIENT TO THE PANEL OF VIEW DETAILS
+        private void PanelViewDetails(Patient patient)
+        {
+            KDFn.Text = patient.FirstName;
+            KDLn.Text = patient.LastName;
+            KDMn.Text = patient.MiddleName;
+            KDPiD.Text = patient.PatientNo;
+            KDEmail.Text = patient.Email;
+            KDOcc.Text = patient.Occupation;
+            KDContNo.Text = patient.ContactNo;
+            KDAddress.Text = patient.Address;
+            KDGFn.Text = patient.GFirstname;
+            KDGLn.Text = patient.GLastname;
+            KDGCn.Text = patient.GContactNo;
+            KDGRelation.Text = patient.GRelationship;
+            DDateOfBirth.Text = patient.DateOfBirth;
+
+            EnabledButtons(true, true);
+            KPViewDetails.Visible = true;
 
         }
+
+        //THIS IS FOR DISPLAYING THE ALL INFO DETAILS OF PATIENT TO THE PANEL OF UPDATE INFO
+        private void PanelUpdateDetails(Patient patient)
+        {
+            KUFn.Text = patient.FirstName;
+            KULn.Text = patient.LastName;
+            KUMn.Text = patient.MiddleName;
+            KUPiD.Text = patient.PatientNo;
+            KUEmail.Text = patient.Email;
+            KUOcc.Text = patient.Occupation;
+            KUCNo.Text = patient.ContactNo;
+            KUAddress.Text = patient.Address;
+            KUGFn.Text = patient.GFirstname;
+            KUGLn.Text = patient.GLastname;
+            KUGCno.Text = patient.GContactNo;
+            KUGRelation.Text = patient.GRelationship;
+            UDateOfBirth.Text = patient.DateOfBirth;
+
+            EnabledButtons(true, true);
+            KUpdateDetails.Visible = true;
+
+        }
+
         private void Panel_MouseDown(object sender, MouseEventArgs e)
         {
             dragging = true;
@@ -58,224 +194,259 @@ namespace FinalProdAppsDev
         {
             dragging = false;
         }
+
+        // THIS METHOD/FUNCTION KY PARA CHANGE COLOR AND SIZE SA BUTTON SA SCANQR,PATIENT REC, CONSULTAION AND BILLINGS
+        private void SetButtonStyles(Krypton.Toolkit.KryptonButton activeButton, params Krypton.Toolkit.KryptonButton[] otherButtons)
+        {
+            activeButton.OverrideDefault.Back.Color1 = Color.White;
+            activeButton.OverrideDefault.Back.Color2 = Color.White;
+            activeButton.StateCommon.Content.ShortText.Font = new Font("Poppins", 10F);
+            activeButton.Size = new Size(170, 45);
+
+            // Reset styles for other buttons
+            foreach (var btn in otherButtons)
+            {
+                KBPatientRecord.StateCommon.Back.Color1 = Color.FromArgb(128, 255, 255, 255);
+                KBPatientRecord.StateCommon.Back.Color2 = Color.FromArgb(128, 255, 255, 255);
+                btn.Font = new Font(activeButton.Font, FontStyle.Regular);
+                btn.Size = new Size(156, 39);
+                btn.Values.DropDownArrowColor = Color.Empty;
+            }
+        }
+
+
+
+        //CLICK BUTTONS ====================================================================================================
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-
-        }
-
-        private void SetButtonStyles(SiticoneNetCoreUI.SiticoneButton activeButton, params SiticoneNetCoreUI.SiticoneButton[] otherButtons)
-        {
-
-            activeButton.ButtonBackColor = Color.White;
-            activeButton.Font = new Font(activeButton.Font, FontStyle.Bold);
-            activeButton.Size = new Size(170, 45);
-
-
-            foreach (var btn in otherButtons)
-            {
-                btn.Font = new Font(activeButton.Font, FontStyle.Regular);
-                btn.ButtonBackColor = Color.FromArgb(128, 255, 255, 255);
-                btn.Size = new Size(156, 39);
-                btn.BorderColor = Color.White;
-            }
-        }
-
-        private void PatientRecords_MouseClick(object sender, MouseEventArgs e)
-        {
-
-            MainPatientRecordPanel.Visible = true;
-            SetButtonStyles(PatientRecords, BAppointments, BScanQr, BBilling);
-        }
-
-        private void BAppointments_MouseClick(object sender, MouseEventArgs e)
-        {
-            MainPatientRecordPanel.Visible = false;
-            SetButtonStyles(BAppointments, PatientRecords, BScanQr, BBilling);
-        }
-
-        private void BScanQr_MouseClick(object sender, MouseEventArgs e)
-        {
-            MainPatientRecordPanel.Visible = false;
-            SetButtonStyles(BScanQr, BAppointments, PatientRecords, BBilling);
-        }
-
-        private void BBilling_MouseClick(object sender, MouseEventArgs e)
-        {
-            MainPatientRecordPanel.Visible = false;
-            SetButtonStyles(BBilling, PatientRecords, BAppointments, BScanQr);
-        }
-
-        private void TBSearchBar_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
         private void BLogout_MouseClick(object sender, MouseEventArgs e)
         {
-
+            //WAla pani
         }
-
-        private void AddPatientB_Click(object sender, EventArgs e)
+        private void BViewMedical_MouseClick_1(object sender, MouseEventArgs e)
         {
+            EnabledButtons(false, true);
+            KPViewDetails.Visible = false;
+        }
+        private void TBDateOfBirth_DropDown(object sender, EventArgs e)
+        {
+            TBDateOfBirth.CustomFormat = "d MMMM yyyy";
+            TBDateOfBirth.Value = DateTime.Today;
+        }
+
+        private void KBPatientRecord_MouseClick(object sender, MouseEventArgs e)
+        {
+            MainPatientRecordPanel.Visible = true;
+            SetButtonStyles(KBPatientRecord, KBConsultation, KBScanQr, KBBillings);
+        }
+
+        private void KBConsultation_MouseClick(object sender, MouseEventArgs e)
+        {
+            MainPatientRecordPanel.Visible = false;
+            SetButtonStyles(KBConsultation, KBPatientRecord, KBScanQr, KBBillings);
+        }
+
+        private void KBScanQr_MouseClick(object sender, MouseEventArgs e)
+        {
+            MainPatientRecordPanel.Visible = false;
+            SetButtonStyles(KBScanQr, KBPatientRecord, KBConsultation, KBBillings);
+        }
+
+        private void KBBillings_MouseClick(object sender, MouseEventArgs e)
+        {
+            MainPatientRecordPanel.Visible = false;
+            SetButtonStyles(KBBillings, KBPatientRecord, KBConsultation, KBScanQr);
 
         }
 
-        private void AddPatientB_MouseClick(object sender, MouseEventArgs e)
+        //FORM - ADD PATIENT BUTTON
+        private void KBAddPatient_MouseClick(object sender, MouseEventArgs e)
         {
             EnabledButtons(false, false);
-            foreach (Control ctrl in PDetailsPatient.Controls)
-            {
-                if (ctrl is SiticoneNetCoreUI.SiticoneTextBox textBox)
-                {
-                    textBox.Text = "";
-                }
+           
+            // KANI KY PARA MA ASSIGNAN NAKO ANG TAGA TEXT BOX KUNG ONSA SIYA.
+            SetPlaceholders((KTBiFirstname, "Enter first name"), (KTBiMiddlename, "Enter middle name"), (KTBiLastname, "Enter last name"),
+                            (KTBiEmail, "Enter email"), (KTBiOccupation, "Enter occupation"), (KTBiContactNo, "Enter contact no."),
+                            (KTBiAddress, "Enter address"), (KTBGifn, "Enter first name"), (KTBGiLn, "Enter last name"), (KTBGiCn, "Enter contact no"), (KTBGiR, "Enter relationshuip"));
+            TBDateOfBirth.CustomFormat = " ";
+        }
 
+        //SEARCH TEXTBOX - PLACE HOLDER OF TEXTBOX SEARCH
+        private void usernameTxtBox_Enter(object sender, EventArgs e)
+        {
+            if (KTBSearch.Text == " Search Patient")
+            {
+                KTBSearch.Text = "";
+                KTBSearch.StateCommon.Content.Color1 = Color.Black;
             }
         }
 
-        private void BSaveDetails_MouseClick(object sender, MouseEventArgs e)
-        {
-            PDetailsPatient.Visible = false;
-            Header.Visible = true;
-            FlowPanel.Visible = true;
-        }
-
-        private void PDetailsPatient_Paint(object sender, PaintEventArgs e)
+        // WAY GAMIT
+        private void KBSaveDetails_MouseClick(object sender, MouseEventArgs e)
         {
 
         }
 
-        private void BSaveDetails_MouseClick_1(object sender, MouseEventArgs e)
+        //REGISTER PANEL - THIS BUTTON IS TO CANCEL THE REGISTER DETAILS OF PATIENT
+        private void KBCancel_MouseClick(object sender, MouseEventArgs e)
         {
+            EnabledButtons(true, false);
+        }
 
-            foreach (Control ctrl in PDetailsPatient.Controls)
-            {
-                if (ctrl is SiticoneTextBox textBox)
-                {
-                    if (string.IsNullOrWhiteSpace(textBox.Text))
-                    {
-                        allFilled = false;
-                        break;
-                    }
-                    else
-                    {
-                        allFilled = true;
-                        break;
-                    }
-                }
-            }
+        //VIEW DETAILS - THIS BUTTON TO SAVE THE DETAILS OF PATIENT AFTER REGISTER
+        private void KBSaveDetails_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            // GENERATE ID
+            PatientNo = "23-" + random.Next(50000, 100000).ToString();
 
+            allFilled = true;
+            allFilled = TextBoxInputChecker((KTBiFirstname, "Enter first name"), (KTBiMiddlename, "Enter middle name"), (KTBiLastname, "Enter last name"),
+                            (KTBiEmail, "Enter email"), (KTBiOccupation, "Enter occupation"), (KTBiContactNo, "Enter contact no."),
+                            (KTBiAddress, "Enter address"), (KTBGifn, "Enter first name"), (KTBGiLn, "Enter last name"), (KTBGiCn, "Enter contact no"), (KTBGiR, "Enter relationshuip"));
+
+            // IF ANG TEXT BOX REGISTER PATIENT KY NAY VALUE TANAN
             if (allFilled)
             {
-                int panelWidth = FlowPanel.Width - FlowPanel.Padding.Left - FlowPanel.Padding.Right;
-                FirstName = TBFn.Text;
-                LastName = TBLn.Text;
-                MiddleName = TBMn.Text;
+                
+                string newPatientId = KTBiPatientId.Text;
+                bool idExists = patientList.Any(p => p.PatientNo == newPatientId); // THIS IS FOR NO DUPLICATE PATIENT ID NUMBER
 
-                Panel panel = new Panel()
+                if (idExists)
                 {
-                    Size = new Size(panelWidth - 30, 90),
-                    Location = new Point(10, 30),
-                    BackColor = Color.FromArgb(210, 225, 237),
-                    BorderStyle = BorderStyle.None,
-                    Margin = new Padding(10, 8, 1, 4),
+                    MessageBox.Show("This Patient ID already exists. Please use a different ID.", "Duplicate ID", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {   
+                    int panelWidth = FlowPanel.Width - FlowPanel.Padding.Left - FlowPanel.Padding.Right;
 
-                };
-
-                Label Idno = new Label
-                {
-
-                    Text = $"{panelList.Count + 1}",
-                    Font = new Font("Arial", 12, FontStyle.Bold),
-                    ForeColor = Color.Black,
-                    AutoSize = true,
-                    Location = new Point(25, 35)
-                };
-
-                Label LFirstName = new Label
-                {
-
-                    Text = $"{FirstName}",
-                    Font = new Font("Arial", 12, FontStyle.Bold),
-                    ForeColor = Color.Black,
-                    AutoSize = true,
-                    Location = new Point(275, 35)
-
-
-                };
-
-                LLastName = new Label
-                {
-
-                    Text = $"{LastName}",
-                    Font = new Font("Arial", 12, FontStyle.Bold),
-                    ForeColor = Color.Black,
-                    AutoSize = true,
-                    Location = new Point(125, 35)
+                    // THIS IS FOR SAVING THE INFO OF PATIENT.. EVERY REGISTER.. AHBASTA KAHIBAW NAKA ANI BARRAL AHAHAH
+                    Patient newPatient = new Patient
+                    {
+                        FirstName = KTBiFirstname.Text,
+                        LastName = KTBiLastname.Text,
+                        MiddleName = KTBiMiddlename.Text,
+                        PatientNo = PatientNo,
+                        Email = KTBiEmail.Text,
+                        Occupation = KTBiOccupation.Text,
+                        ContactNo = KTBiContactNo.Text,
+                        Address = KTBiAddress.Text,
+                        GFirstname = KTBGifn.Text,
+                        GLastname = KTBGiLn.Text,
+                        GContactNo = KTBGiCn.Text,
+                        GRelationship = KTBGiR.Text,
+                        DateOfBirth = TBDateOfBirth.Value.ToString("d MMMM yyyy")
+                    };
+                    // ADD TO LIST
+                    patientList.Add(newPatient);
+                   
+                    // PASSING THE VALUE TO DISPLAY SA SCROLL PANEL.. 
+                    PFirstName = newPatient.FirstName;
+                    PLastName = newPatient.LastName;
+                    PMiddleName = newPatient.MiddleName;
 
 
-                };
+                    panel = new Panel()
+                    {
+                        Size = new Size(panelWidth - 30, 90),
+                        Location = new Point(10, 30),
+                        BackColor = Color.FromArgb(210, 225, 237),
+                        BorderStyle = BorderStyle.None,
+                        Margin = new Padding(10, 8, 1, 4),
 
-                Label LMiddleName = new Label
-                {
+                    };
 
-                    Text = $"{MiddleName}",
-                    Font = new Font("Arial", 12, FontStyle.Bold),
-                    ForeColor = Color.Black,
-                    AutoSize = true,
-                    Location = new Point(432, 35)
+                    Label Idno = new Label
+                    {
+
+                        Text = $"{PatientNo}",
+                        Font = new Font("Poppins", 12F, FontStyle.Bold),
+                        ForeColor = Color.Black,
+                        AutoSize = true,
+                        Location = new Point(5, 31)
+                    };
+
+                    LFirstName = new Label
+                    {
+
+                        Text = $"{PFirstName}",
+                        Font = new Font("Poppins", 11F),
+                        ForeColor = Color.Black,
+                        AutoSize = true,
+                        Location = new Point(241, 31)
 
 
-                };
+                    };
+
+                    LLastName = new Label
+                    {
+
+                        Text = $"{PLastName.ToUpper()}",
+                        Font = new Font("Poppins", 11F),
+                        ForeColor = Color.Black,
+                        AutoSize = true,
+                        Location = new Point(108, 31)
 
 
-                Button UpdateButton = new Button
-                {
-                    BackColor = Color.FromArgb(9, 195, 51),
-                    Font = new Font("Arial Rounded MT Bold", 8F, FontStyle.Bold),
-                    ForeColor = Color.White,
-                    Location = new Point(675, 28),
-                    Name = "update",
-                    Size = new Size(73, 33),
-                    TabIndex = 7,
-                    Text = "Update",
-                    UseVisualStyleBackColor = false
+                    };
 
-                };
+                    LMiddleName = new Label
+                    {
 
-                Button viewButton = new Button
-                {
-                    BackColor = Color.FromArgb(58, 94, 116),
-                    Font = new Font("Arial Rounded MT Bold", 8F, FontStyle.Bold),
-                    ForeColor = Color.White,
-                    Location = new Point(600, 28),
-                    Name = "View",
-                    Size = new Size(73, 33),
-                    TabIndex = 7,
-                    Text = "View",
-                    UseVisualStyleBackColor = false
+                        Text = $"{PMiddleName}",
+                        Font = new Font("Poppins", 11F),
+                        ForeColor = Color.Black,
+                        AutoSize = true,
+                        Location = new Point(395, 31)
 
-                };
 
-                viewButton.Click += (s, args) => ViewDetails(FirstName, LastName, MiddleName);
-                UpdateButton.Click += (s, args) => UpdateDetails(FirstName, LastName, MiddleName);
+                    };
 
-                panel.Controls.Add(LMiddleName);
-                panel.Controls.Add(LLastName);
-                panel.Controls.Add(LFirstName);
-                panel.Controls.Add(Idno);
-                panel.Controls.Add(viewButton);
-                panel.Controls.Add(UpdateButton);
 
-                panelList.Add(panel);
-                FlowPanel.Controls.Add(panel);
-                EnabledButtons(true, false);
+                    Button UpdateButton = new Button
+                    {
+                        BackColor = Color.FromArgb(9, 195, 51),
+                        Font = new Font("Arial Rounded MT Bold", 8F, FontStyle.Bold),
+                        ForeColor = Color.White,
+                        Location = new Point(675, 28),
+                        Name = "update",
+                        Size = new Size(73, 33),
+                        TabIndex = 7,
+                        Text = "Update",
+                        UseVisualStyleBackColor = false
+
+                    };
+
+                    Button viewButton = new Button
+                    {
+                        BackColor = Color.FromArgb(58, 94, 116),
+                        Font = new Font("Arial Rounded MT Bold", 8F, FontStyle.Bold),
+                        ForeColor = Color.White,
+                        Location = new Point(600, 28),
+                        Name = "View",
+                        Size = new Size(73, 33),
+                        TabIndex = 7,
+                        Text = "View",
+                        UseVisualStyleBackColor = false
+
+                    };
+
+                    viewButton.Click += (s, args) => PanelViewDetails(newPatient);
+                    UpdateButton.Click += (s, args) => PanelUpdateDetails(newPatient);
+
+                    panel.Controls.Add(LMiddleName);
+                    panel.Controls.Add(LLastName);
+                    panel.Controls.Add(LFirstName);
+                    panel.Controls.Add(Idno);
+                    panel.Controls.Add(viewButton);
+                    panel.Controls.Add(UpdateButton);
+                    labelDictionary[PatientNo] = (LFirstName, LMiddleName, LLastName);
+                    panelList.Add(panel);
+                    FlowPanel.Controls.Add(panel);
+                    EnabledButtons(true, false);
+                }
+
             }
             else
             {
@@ -283,120 +454,116 @@ namespace FinalProdAppsDev
             }
         }
 
-        private void BCancel_MouseClick(object sender, MouseEventArgs e)
+        //VIEW DETAILS - THIS BUTTON EXIST IN THE VIEW PATIENT INFO.. IF YOU CLICK THIS BUTTON, THE MEDICAL RECORD WILL APPEAR
+        private void KBViewMedicR_MouseClick(object sender, MouseEventArgs e)
         {
-            EnabledButtons(true, false);
+            PMedicalRecord.Visible = true;
+            KPViewDetails.Visible = false;
+            KTBSearch.Visible = false;
+            KBAddPatient.Visible = false;
+
         }
 
-
-
-
-        private void EnabledButtons(bool isDetailsOpen, bool isViewDetailsPatient)
+        //UPDATE PANEL - THIS BUTTON IS TO SAVE THE UPDATE INFO OF PATIENT
+        private void KBUpdate_MouseClick(object sender, MouseEventArgs e)
         {
-            if (isViewDetailsPatient)
+            // KANI KY IF ASA NGA PANEL GI PISLIT ANG UPDATE BUTTON KY ADTO RA SIYA MA ILIS
+            Patient selectedPatient = patientList.FirstOrDefault(p => p.PatientNo == KUPiD.Text);
+
+            if (selectedPatient != null)
             {
-                if (isDetailsOpen)
+                selectedPatient.FirstName = KUFn.Text;
+                selectedPatient.LastName = KULn.Text;
+                selectedPatient.MiddleName = KUMn.Text;
+                selectedPatient.PatientNo = KUPiD.Text;
+                selectedPatient.Email = KUEmail.Text;
+                selectedPatient.Occupation = KUOcc.Text;
+                selectedPatient.ContactNo = KUCNo.Text;
+                selectedPatient.Address = KUAddress.Text;
+                selectedPatient.GFirstname = KUGFn.Text;
+                selectedPatient.GLastname = KUGLn.Text;
+                selectedPatient.GContactNo = KUGCno.Text;
+                selectedPatient.GRelationship = KUGRelation.Text;
+                selectedPatient.DateOfBirth = UDateOfBirth.Value.ToString("d MMMM yyyy");
+
+                // REASSIGN THE VALUE OF FIRSTNAME.. ETC SA KATONG SCROLL PANEL
+                if (labelDictionary.ContainsKey(selectedPatient.PatientNo))
                 {
-                    FlowPanel.Visible = false;
-                    Header.Visible = false;
-                    TBSearchBar.Enabled = false;
-                    AddPatientB.Enabled = false;
+                    var (firstNameLabel, middleNameLabel, lastNameLabel) = labelDictionary[selectedPatient.PatientNo];
 
-
-                }
-                else
-                {
-                    FlowPanel.Visible = true;
-                    Header.Visible = true;
-                    TBSearchBar.Enabled = true;
-                    AddPatientB.Enabled = true;
-
-                }
-
-
-
-            }
-            else
-            {
-                if (isDetailsOpen)
-                {
-                    PDetailsPatient.Visible = false;
-                    FlowPanel.Visible = true;
-                    Header.Visible = true;
-                    TBSearchBar.Enabled = true;
-                    AddPatientB.Enabled = true;
-                    AddPatientB.Enabled = true;
-                }
-                else
-                {
-                    TBSearchBar.Text = "";
-                    FlowPanel.Visible = false;
-                    Header.Visible = false;
-                    TBSearchBar.Enabled = false;
-                    AddPatientB.Enabled = false;
-                    PDetailsPatient.Visible = true;
+                    firstNameLabel.Text = selectedPatient.FirstName;
+                    middleNameLabel.Text = selectedPatient.MiddleName;
+                    lastNameLabel.Text = selectedPatient.LastName.ToUpper();
                 }
             }
 
-
-
-        }
-
-        private void ViewDetails(string firstName, string lastName, string middleName)
-        {
-            DFirstname.Text = firstName;
-            DLastname.Text = lastName;
-            DMiddleName.Text = middleName;
-
-            EnabledButtons(true, true);
-            ViewPanel.Visible = true;
-        }
-
-        private void UpdateDetails(string firstName, string lastName, string middleName)
-        {
-            ULFirstname.Text = firstName;
-            ULLastname.Text = lastName;
-            ULMiddlename.Text = middleName;
-
-            EnabledButtons(true, true);
-            PUpdateDetails.Visible = true;
-
-        }
-
-        private void BViewMedical_MouseClick_1(object sender, MouseEventArgs e)
-        {
             EnabledButtons(false, true);
-            ViewPanel.Visible = false;
+            KUpdateDetails.Visible = false;
         }
 
-        private void BUpdate_MouseClick(object sender, MouseEventArgs e)
+        //UPDATE PANEL - THIS BUTTON IS TO CANCEL / BACK THE UPDATE PANEL
+        private void KUBcancel_MouseClick(object sender, MouseEventArgs e)
         {
-            FirstName = ULFirstname.Text;
-            LastName = ULLastname.Text;
-            MiddleName = ULMiddlename.Text;
 
             EnabledButtons(false, true);
-            PUpdateDetails.Visible = false;
-
-            LLastName.Text = LastName;
+            KUpdateDetails.Visible = false;
         }
 
-        private void BExit_MouseClick(object sender, MouseEventArgs e)
+        //FORM - EXIT BUTTON TO EXIT THE PROGRAM.
+        private void ExitButton_MouseClick(object sender, MouseEventArgs e)
         {
-            EnabledButtons(false, true);
-            PUpdateDetails.Visible = false;
+            Application.Exit();
         }
 
+        //SEARCH TEXTBOX - KANI KY KATONG IGKA SEARCH PATIENT KY MAO RAY MO GAWAS
+        private void KTBSearch_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = KTBSearch.Text.Trim().ToLower();
 
-        //private void TBFn_TextChanged(object sender, EventArgs e)
-        //{
-        //    CheckTextBoxes();
-        //}
+            foreach (var panel in panelList)
+            {
+                panel.Visible = false;
+            }
 
-        //private void CheckTextBoxes()
-        //{
+            foreach (var patient in patientList)
+            {
+                if (patient.FirstName.ToLower().Contains(searchText) ||
+                    patient.MiddleName.ToLower().Contains(searchText) ||
+                    patient.LastName.ToLower().Contains(searchText))
+                {
+                    if (labelDictionary.ContainsKey(patient.PatientNo))
+                    {
+                        var (firstNameLabel, middleNameLabel, lastNameLabel) = labelDictionary[patient.PatientNo];
 
-        //}
+                        foreach (var panel in panelList)
+                        {
+                            if (panel.Controls.Contains(firstNameLabel) && panel.Controls.Contains(middleNameLabel) && panel.Controls.Contains(lastNameLabel))
+                            {
+                                panel.Visible = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        // MEDICAL RECORD - THIS BUTTON IS FOR BACK TO VIEW DETAILS
+        private void MRbBack_MouseClick(object sender, MouseEventArgs e)
+        {
+            PMedicalRecord.Visible = false;
+            KPViewDetails.Visible = true;
+            KPViewDetails.Visible = true;
+            KTBSearch.Visible = true;
+            KBAddPatient.Visible = true;
+           
+        }
 
+        // VIEW DETAILS PANEL - PARA BACK TO HOMEPAGE
+        private void DPBackButton_MouseClick(object sender, MouseEventArgs e)
+        {
+            KPViewDetails.Visible = false;
+            EnabledButtons(false, true);
+        }
     }
 }

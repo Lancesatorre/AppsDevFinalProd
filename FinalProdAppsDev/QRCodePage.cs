@@ -29,7 +29,7 @@ namespace FinalProdAppsDev
             QRCode qrCode = new QRCode(qrCodeData);
             Bitmap qrCodeImage = qrCode.GetGraphic(10); // 10 is the pixel per module (size)
 
-            siticonePictureBox1.Image = qrCodeImage;
+            //siticonePictureBox1.Image = qrCodeImage;
         }
         private void QRCodePage_Load(object sender, EventArgs e)
         {

@@ -8,11 +8,20 @@
     ".NETCoreApp,Version=v8.0": {
       "FinalProdAppsDev/1.0.0": {
         "dependencies": {
+          "Krypton.Toolkit": "90.25.2.55",
           "Siticone.NetCore.UI": "2025.2.14",
           "ZXing.Net": "0.16.10"
         },
         "runtime": {
           "FinalProdAppsDev.dll": {}
+        }
+      },
+      "Krypton.Toolkit/90.25.2.55": {
+        "runtime": {
+          "lib/net8.0-windows7.0/Krypton.Toolkit.dll": {
+            "assemblyVersion": "90.25.2.55",
+            "fileVersion": "90.25.2.55"
+          }
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/9.0.1": {
@@ -182,6 +191,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Krypton.Toolkit/90.25.2.55": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FaAMlKtIoCwZqQHjsyd6PzF/KdSYdLrv8IwvepyHenES59MVUGcwBJDWRM949KWhq8mky3icT5Xkq7qwnyQFCA==",
+      "path": "krypton.toolkit/90.25.2.55",
+      "hashPath": "krypton.toolkit.90.25.2.55.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/9.0.1": {
       "type": "package",

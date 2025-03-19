@@ -29,66 +29,112 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QRCodePage));
-            siticonePictureBox1 = new SiticoneNetCoreUI.SiticonePictureBox();
+            kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            siticoneAdvancedPanel1 = new SiticoneNetCoreUI.SiticoneAdvancedPanel();
+            siticoneLabel1 = new SiticoneNetCoreUI.SiticoneLabel();
+            ((System.ComponentModel.ISupportInitialize)kryptonPanel1).BeginInit();
+            kryptonPanel1.SuspendLayout();
             SuspendLayout();
             // 
-            // siticonePictureBox1
+            // kryptonPanel1
             // 
-            siticonePictureBox1.BackColor = Color.FromArgb(30, 0, 0, 0);
-            siticonePictureBox1.BackgroundImageLayout = ImageLayout.Center;
-            siticonePictureBox1.BorderColor = Color.Black;
-            siticonePictureBox1.BorderWidth = 1;
-            siticonePictureBox1.Brightness = 1F;
-            siticonePictureBox1.Contrast = 1F;
-            siticonePictureBox1.CornerRadius = 0;
-            siticonePictureBox1.DraggingSpeed = 3.15F;
-            siticonePictureBox1.EnableAsyncLoading = false;
-            siticonePictureBox1.EnableCaching = false;
-            siticonePictureBox1.EnableDragDrop = false;
-            siticonePictureBox1.EnableExtendedImageSources = false;
-            siticonePictureBox1.EnableFilters = false;
-            siticonePictureBox1.EnableFlipping = false;
-            siticonePictureBox1.EnableGlow = false;
-            siticonePictureBox1.EnableHighDpiSupport = false;
-            siticonePictureBox1.EnableMouseInteraction = false;
-            siticonePictureBox1.EnablePlaceholder = false;
-            siticonePictureBox1.EnableRotation = false;
-            siticonePictureBox1.EnableShadow = false;
-            siticonePictureBox1.EnableSlideshow = false;
-            siticonePictureBox1.FlipHorizontal = false;
-            siticonePictureBox1.FlipVertical = false;
-            siticonePictureBox1.Grayscale = false;
-            siticonePictureBox1.Image = null;
-            siticonePictureBox1.ImageOpacity = 1F;
-            siticonePictureBox1.Images = (List<Image>)resources.GetObject("siticonePictureBox1.Images");
-            siticonePictureBox1.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            siticonePictureBox1.IsCircular = false;
-            siticonePictureBox1.Location = new Point(256, 30);
-            siticonePictureBox1.MaintainAspectRatio = true;
-            siticonePictureBox1.Name = "siticonePictureBox1";
-            siticonePictureBox1.PlaceholderImage = null;
-            siticonePictureBox1.RotationAngle = 0F;
-            siticonePictureBox1.Saturation = 1F;
-            siticonePictureBox1.ShowBorder = true;
-            siticonePictureBox1.Size = new Size(457, 393);
-            siticonePictureBox1.SizeMode = SiticoneNetCoreUI.SiticonePictureBoxSizeMode.StretchImage;
-            siticonePictureBox1.TabIndex = 4;
-            siticonePictureBox1.Text = "siticonePictureBox1";
-            siticonePictureBox1.Click += siticonePictureBox1_Click;
+            kryptonPanel1.Controls.Add(siticoneAdvancedPanel1);
+            kryptonPanel1.Location = new Point(691, 34);
+            kryptonPanel1.Name = "kryptonPanel1";
+            kryptonPanel1.Size = new Size(216, 189);
+            kryptonPanel1.TabIndex = 0;
+            // 
+            // siticoneAdvancedPanel1
+            // 
+            siticoneAdvancedPanel1.ActiveBackColor = Color.Empty;
+            siticoneAdvancedPanel1.ActiveBorderColor = Color.Empty;
+            siticoneAdvancedPanel1.AdvancedBorderStyle = SiticoneNetCoreUI.SiticoneAdvancedPanel.BorderStyleEx.Solid;
+            siticoneAdvancedPanel1.AnimationDuration = 500;
+            siticoneAdvancedPanel1.AnimationType = SiticoneNetCoreUI.SiticoneAdvancedPanel.AnimationTypeEx.Fade;
+            siticoneAdvancedPanel1.BackColor = Color.White;
+            siticoneAdvancedPanel1.BackgroundImageCustom = null;
+            siticoneAdvancedPanel1.BackgroundImageOpacity = 1F;
+            siticoneAdvancedPanel1.BackgroundImageSizeMode = SiticoneNetCoreUI.SiticoneAdvancedPanel.ImageSizeModeEx.Stretch;
+            siticoneAdvancedPanel1.BackgroundOverlayColor = Color.FromArgb(0, 0, 0, 0);
+            siticoneAdvancedPanel1.BorderColor = Color.Gray;
+            siticoneAdvancedPanel1.BorderDashPattern = null;
+            siticoneAdvancedPanel1.BorderGlowColor = Color.Cyan;
+            siticoneAdvancedPanel1.BorderGlowSize = 3F;
+            siticoneAdvancedPanel1.BorderWidth = 1F;
+            siticoneAdvancedPanel1.BottomLeftRadius = 5;
+            siticoneAdvancedPanel1.BottomRightRadius = 5;
+            siticoneAdvancedPanel1.ContentAlignmentCustom = ContentAlignment.MiddleCenter;
+            siticoneAdvancedPanel1.CornerPadding = new Padding(5);
+            siticoneAdvancedPanel1.DisabledBackColor = Color.Empty;
+            siticoneAdvancedPanel1.DisabledBorderColor = Color.Empty;
+            siticoneAdvancedPanel1.DoubleBorderSpacing = 2F;
+            siticoneAdvancedPanel1.EasingType = SiticoneNetCoreUI.SiticoneAdvancedPanel.EasingTypeEx.Linear;
+            siticoneAdvancedPanel1.EnableAnimation = false;
+            siticoneAdvancedPanel1.EnableBackgroundImage = false;
+            siticoneAdvancedPanel1.EnableBorderGlow = false;
+            siticoneAdvancedPanel1.EnableDoubleBorder = false;
+            siticoneAdvancedPanel1.EnableGradient = false;
+            siticoneAdvancedPanel1.EnableInnerShadow = false;
+            siticoneAdvancedPanel1.EnableShadow = false;
+            siticoneAdvancedPanel1.EnableSmartPadding = true;
+            siticoneAdvancedPanel1.EnableStateStyles = false;
+            siticoneAdvancedPanel1.FlowDirectionCustom = FlowDirection.LeftToRight;
+            siticoneAdvancedPanel1.GradientAngle = 90F;
+            siticoneAdvancedPanel1.GradientEndColor = Color.LightGray;
+            siticoneAdvancedPanel1.GradientStartColor = Color.White;
+            siticoneAdvancedPanel1.GradientType = SiticoneNetCoreUI.SiticoneAdvancedPanel.GradientTypeEx.Linear;
+            siticoneAdvancedPanel1.HoverBackColor = Color.Empty;
+            siticoneAdvancedPanel1.HoverBorderColor = Color.Empty;
+            siticoneAdvancedPanel1.InnerShadowColor = Color.Black;
+            siticoneAdvancedPanel1.InnerShadowDepth = 3;
+            siticoneAdvancedPanel1.InnerShadowOpacity = 0.2F;
+            siticoneAdvancedPanel1.Location = new Point(291, 106);
+            siticoneAdvancedPanel1.Name = "siticoneAdvancedPanel1";
+            siticoneAdvancedPanel1.Padding = new Padding(10);
+            siticoneAdvancedPanel1.RadialGradientCenter = (PointF)resources.GetObject("siticoneAdvancedPanel1.RadialGradientCenter");
+            siticoneAdvancedPanel1.RadialGradientRadius = 1F;
+            siticoneAdvancedPanel1.ScaleRatio = 0.8F;
+            siticoneAdvancedPanel1.SecondaryBorderColor = Color.DarkGray;
+            siticoneAdvancedPanel1.ShadowBlur = 10;
+            siticoneAdvancedPanel1.ShadowColor = Color.Black;
+            siticoneAdvancedPanel1.ShadowDepth = 5;
+            siticoneAdvancedPanel1.ShadowOffset = new Point(2, 2);
+            siticoneAdvancedPanel1.ShadowOpacity = 0.3F;
+            siticoneAdvancedPanel1.Size = new Size(8, 8);
+            siticoneAdvancedPanel1.SlideDirection = new Point(0, -30);
+            siticoneAdvancedPanel1.TabIndex = 0;
+            siticoneAdvancedPanel1.TopLeftRadius = 5;
+            siticoneAdvancedPanel1.TopRightRadius = 5;
+            // 
+            // siticoneLabel1
+            // 
+            siticoneLabel1.BackColor = Color.Transparent;
+            siticoneLabel1.Font = new Font("Segoe UI", 10F);
+            siticoneLabel1.Location = new Point(544, 140);
+            siticoneLabel1.Name = "siticoneLabel1";
+            siticoneLabel1.Size = new Size(280, 147);
+            siticoneLabel1.TabIndex = 1;
+            siticoneLabel1.Text = "siticoneLabel1";
             // 
             // QRCodePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(siticonePictureBox1);
+            ClientSize = new Size(954, 657);
+            Controls.Add(siticoneLabel1);
+            Controls.Add(kryptonPanel1);
             Name = "QRCodePage";
             Text = "QRCodePage";
             Load += QRCodePage_Load;
+            ((System.ComponentModel.ISupportInitialize)kryptonPanel1).EndInit();
+            kryptonPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
-        private SiticoneNetCoreUI.SiticonePictureBox siticonePictureBox1;
+
+        private Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private SiticoneNetCoreUI.SiticoneAdvancedPanel siticoneAdvancedPanel1;
+        private SiticoneNetCoreUI.SiticoneLabel siticoneLabel1;
     }
 }

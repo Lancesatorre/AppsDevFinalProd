@@ -40,3 +40,4 @@ C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\FinalProdAppsDev\obj\Debug
 C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalProdAppsDev.pdb
 C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\FinalProdAppsDev\obj\Debug\net8.0-windows\FinalProdAppsDev.genruntimeconfig.cache
 C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\FinalProdAppsDev\obj\Debug\net8.0-windows\ref\FinalProdAppsDev.dll
+C:\Users\Admin\OneDrive\Desktop\Hospital-AppsDevFinal\FinalProdAppsDev\bin\Debug\net8.0-windows\Krypton.Toolkit.dll

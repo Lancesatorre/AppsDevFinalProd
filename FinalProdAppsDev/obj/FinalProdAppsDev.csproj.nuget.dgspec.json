@@ -50,6 +50,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "Krypton.Toolkit": {
+              "target": "Package",
+              "version": "[90.25.2.55, )"
+            },
             "Siticone.NetCore.UI": {
               "target": "Package",
               "version": "[2025.2.14, )"

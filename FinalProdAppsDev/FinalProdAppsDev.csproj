@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Krypton.Toolkit" Version="90.25.2.55" />
     <PackageReference Include="Siticone.NetCore.UI" Version="2025.2.14" />
     <PackageReference Include="ZXing.Net" Version="0.16.10" />
   </ItemGroup>
